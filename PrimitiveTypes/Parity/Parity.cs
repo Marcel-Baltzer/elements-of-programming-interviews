@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.Chapter4
+namespace Elements_of_Programming_Interviews.PrimitiveTypes
 {
     public class Parity
     {
@@ -19,7 +19,7 @@ namespace Elements_of_Programming_Interviews.Chapter4
 
             while (number > 0){
                 result ^= 1;
-                number &= number - 1; // Drops the lowest set but of number
+                number &= number - 1; // Drops the lowest set bit of number
             }
 
             return result;

@@ -1,7 +1,7 @@
 using Xunit;
 using FluentAssertions;
 
-namespace Elements_of_Programming_Interviews.Chapter4
+namespace Elements_of_Programming_Interviews.PrimitiveTypes
 {
     public class CountBitsTests
     {
