@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.PrimitiveTypes
+namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
 {
     public class Parity
     {

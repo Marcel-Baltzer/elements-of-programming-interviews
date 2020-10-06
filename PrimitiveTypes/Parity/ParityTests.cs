@@ -1,7 +1,7 @@
 using Xunit;
 using FluentAssertions;
 
-namespace Elements_of_Programming_Interviews.PrimitiveTypes
+namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
 {
     public class ParityTests
     {

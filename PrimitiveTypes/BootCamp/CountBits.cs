@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.PrimitiveTypes
+namespace Elements_of_Programming_Interviews.PrimitiveTypes.BootCamp
 {
     public class CountBits{
 
