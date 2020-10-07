@@ -3,7 +3,7 @@ using FluentAssertions;
 
 namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
 {
-    public class ParityTests
+    public class Tests
     {
         [Theory]
         [InlineData(0,0)]
@@ -14,11 +14,9 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
         [InlineData(5,0)]
         [InlineData(6,0)]
         [InlineData(7,1)]
-        public void WithBruteForceFor(long number, short expectedResult){
-
-            var parity = new Parity();
-
-            var result = parity.WithBruteForceFor(number);
+        public void BruteForce(long number, short expectedResult)
+        {
+            var result = Solution.BruteForce(number);
 
             result.Should().Be(expectedResult);
         }
@@ -32,11 +30,9 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
         [InlineData(5,0)]
         [InlineData(6,0)]
         [InlineData(7,1)]
-        public void For(long number, short expectedResult){
-
-            var parity = new Parity();
-
-            var result = parity.For(number);
+        public void Parity(long number, short expectedResult)
+        {
+            var result = Solution.Parity(number);
 
             result.Should().Be(expectedResult);
         }
@@ -50,11 +46,9 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
         [InlineData(5,0)]
         [InlineData(6,0)]
         [InlineData(7,1)]
-        public void WithMaskFor(long number, short expectedResult){
-
-            var parity = new Parity();
-
-            var result = parity.WithMaskFor(number);
+        public void ParityWithChache(long number, short expectedResult)
+        {
+            var result = Solution.ParityWithChache(number);
 
             result.Should().Be(expectedResult);
         }
@@ -68,11 +62,9 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
         [InlineData(5,0)]
         [InlineData(6,0)]
         [InlineData(7,1)]
-        public void WithXorFor(long number, short expectedResult){
-
-            var parity = new Parity();
-
-            var result = parity.WithXorFor(number);
+        public void ParityWithXor(long number, short expectedResult)
+        {
+            var result = Solution.ParityWithXor(number);
 
             result.Should().Be(expectedResult);
         }

@@ -1,14 +1,13 @@
-using System;
-using System.Collections.Generic;
-
 namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
 {
-    public class Parity
+    public class Solution
     {
-        public short WithBruteForceFor(long number){
+        public static short BruteForce(long number)
+        {
             long result = 0;
 
-            while (number > 0){
+            while (number > 0)
+            {
                 result ^= (number & 1);
                 number >>= 1;
             }
@@ -17,10 +16,12 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
         }
 
 
-        public short For(long number){
+        public static short Parity(long number)
+        {
             short result = 0;
 
-            while (number > 0){
+            while (number > 0)
+            {
                 result ^= 1;
                 number &= number - 1; // Drops the lowest set bit of number
             }
@@ -28,15 +29,17 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
             return result;
         }
 
-        public short WithMaskFor(long number){
+        public static short ParityWithChache(long number)
+        {
              
             var wordSize = 16;
             var bitMask = 0xFFFF;
 
             var precomputedParity = new short[1 << wordSize];
 
-            for (int i = 0; i < (1 << wordSize); ++i) {
-                precomputedParity[i] = For(i);
+            for (int i = 0; i < (1 << wordSize); ++i) 
+            {
+                precomputedParity[i] = Parity(i);
             } 
 
             var result = (short)(
@@ -48,8 +51,8 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
             return result;
         }
 
-        public short WithXorFor(long number){            
-
+        public static short ParityWithXor(long number)
+        {
             number ^= number >> 32;
             number ^= number >> 16;
             number ^= number >> 8;

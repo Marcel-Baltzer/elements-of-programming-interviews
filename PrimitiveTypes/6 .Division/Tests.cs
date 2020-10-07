@@ -3,14 +3,12 @@ using Xunit;
 
 namespace Elements_of_Programming_Interviews.PrimitiveTypes.Division
 {
-    public class DivisionTests
+    public class Tests
     {
         [Fact]
-        public void For(){
-            
-            var divide = new Division();
-
-            var result = divide.For(137, 7);
+        public void Divide()
+        {
+            var result = Solution.Divide(137, 7);
 
             result.Should().Be(19);
         }

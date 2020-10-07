@@ -1,8 +1,8 @@
 namespace Elements_of_Programming_Interviews.PrimitiveTypes.Multiplication
 {
-    public class Multiplication
+    public class Solution
     {
-        public long For(long x, long y)
+        public static long Multiply(long x, long y)
         {
             long sum = 0;
 

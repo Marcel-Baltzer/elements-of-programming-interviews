@@ -1,16 +1,15 @@
 namespace Elements_of_Programming_Interviews.PrimitiveTypes.ReverseBits
 {
-    public class ReverseBits
+    public class Solution
     {
-        public long WithBrutForceFor(long number, int lastIndex)
-        {
-            var swap = new SwapBits.SwapBits();
-
+        public static long BrutForce(long number, int lastIndex)
+        {   
             int i = 0;
             int j = lastIndex;
 
-            while (i < j) {
-                number = swap.For(number, i, j);
+            while (i < j) 
+            {
+                number = SwapBits.Solution.SwapBits(number, i, j);
                 i++;
                 j--;
             }
@@ -18,15 +17,16 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.ReverseBits
             return number;
         }
 
-        public long For(long number){
-             
+        public static long ReverseBits(long number)
+        {             
             var wordSize = 16;
             var bitMask = 0xFFFF;            
 
             var precomputedReverse = new long[1 << wordSize];
 
-            for (long i = 0; i < (1 << wordSize); i++) {
-                precomputedReverse[i] = WithBrutForceFor(i, wordSize-1);
+            for (long i = 0; i < (1 << wordSize); i++) 
+            {
+                precomputedReverse[i] = BrutForce(i, wordSize-1);
             } 
 
             var result =

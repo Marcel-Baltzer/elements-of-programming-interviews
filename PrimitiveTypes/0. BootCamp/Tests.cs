@@ -3,7 +3,7 @@ using FluentAssertions;
 
 namespace Elements_of_Programming_Interviews.PrimitiveTypes.BootCamp
 {
-    public class CountBitsTests
+    public class Tests
     {
         [Theory]
         [InlineData(0,0)]
@@ -14,11 +14,9 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.BootCamp
         [InlineData(5,2)]
         [InlineData(6,2)]
         [InlineData(7,3)]
-        public void For(int number, int expectedResult){
-
-            var countBits = new CountBits();
-
-            var result = countBits.For(number);
+        public void CountBits(int number, int expectedResult)
+        {
+            var result = Solution.CountBits(number);
 
             result.Should().Be(expectedResult);
         }

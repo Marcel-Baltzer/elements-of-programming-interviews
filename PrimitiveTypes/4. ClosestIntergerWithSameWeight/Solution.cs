@@ -2,11 +2,11 @@ using System;
 
 namespace Elements_of_Programming_Interviews.PrimitiveTypes.ClosestIntergerWithSameWeight
 {
-    public class ClosestIntWithSameBitCount
+    public class Solution
     {
         private const int NUM_UNSIGN_BITS = 63;
 
-        public long For(long number)
+        public static long ClosestIntWithSameBitCount(long number)
         {
             for (int i = 0; i < NUM_UNSIGN_BITS -1; ++i)
             {
