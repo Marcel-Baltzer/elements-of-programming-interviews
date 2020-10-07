@@ -28,5 +28,17 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.Palindrome
             
             return true;
         }
+
+        public static bool IsPalindromeNumberAlternative(int number)
+        {
+            if(number < 0)
+            {
+                return false;
+            }
+
+            var reverse = ReverseDigits.Solution.ReverseDigits(number);
+
+            return number == reverse;
+        }
     }
 }
