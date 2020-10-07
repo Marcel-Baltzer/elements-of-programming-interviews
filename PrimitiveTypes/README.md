@@ -5,7 +5,7 @@
 2. Swap bits
 3. Reverse bits
 4. Find a closest integer with the same weight
-5. Compute x X y without arithmetical operators
+5. Compute x*y without arithmetical operators
 6. Compute x/y
 7. Compute x<sup>y</sup>
 8. Reverse digits
