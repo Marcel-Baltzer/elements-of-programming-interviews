@@ -13,7 +13,7 @@ namespace Elements_of_Programming_Interviews.Arrays.BootCamp
 
             Solution.EvenOdd(array);
 
-            array.Should().BeEquivalentTo(expectedArray);
+            array.Should().BeEquivalentTo(expectedArray, options => options.WithStrictOrdering());
         }
     }
 }
