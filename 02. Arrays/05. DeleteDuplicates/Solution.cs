@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.Arrays.DeleteDuplications
+namespace Elements_of_Programming_Interviews.Arrays.DeleteDuplicates
 {
     public class Solution
     {
