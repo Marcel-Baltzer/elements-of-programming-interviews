@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Arrays.ArbitraryPrecision
+namespace Elements_of_Programming_Interviews.Arrays.ArbitraryPrecisionIncrement
 {
     public class Solution
     {
