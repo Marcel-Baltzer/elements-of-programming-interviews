@@ -5,7 +5,7 @@
 2. Increment an arbitrary-precision integer
 3. Multiply two arbitrary-precision integers
 4. Advancing through an array
-5. Delete duplicatesfrom a sorted array
+5. Delete duplicates from a sorted array
 6. Buy and sell a stock once
 7. Buy and sell a stock twice
 8. Enumerate all primesto n
