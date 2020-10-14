@@ -7,7 +7,7 @@
 4. Replace and remove
 5. Test palindromicity
 6. Reverse all the wordsin a sentence
-7. Compute all mnemonics for a phone number
+7. Compute all mnemonics for a phone number (only in the java and c++ version)
 8. The look-and-say problem
 9. Convert from Roman to decimal
 10. Compute all valid IP addresses
