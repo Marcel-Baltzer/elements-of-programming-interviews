@@ -1,4 +1,4 @@
-# Arrays
+# Strings
 
 0. BootCamp
 1. Interconvert strings and integers
