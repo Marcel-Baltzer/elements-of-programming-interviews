@@ -1,4 +1,4 @@
-# Arrays
+# LinkedLists
 
 0. BootCamp
 1. Merge two sorted lists
