@@ -19,7 +19,7 @@ namespace Elements_of_Programming_Interviews.Arrays.GeneratePrimes
         [Fact]
         public void GeneratePrimesOptimization()
         {
-            var result = Solution.GeneratePrimesOptimization(100);
+            var result = Solution.GeneratePrimesOptimization(18);
 
             var expectedPrimes = new List<int>() {2,3,5,7,11,13,17};
 
