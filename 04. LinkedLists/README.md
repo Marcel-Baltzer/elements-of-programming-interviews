@@ -14,3 +14,15 @@
 11. Test whether a singly linked list is palindromic
 12. Implement list pivoting
 13. Add list-based integers
+
+For all problems in this chapter, unless otherwise stated, each node has two entries - a data field, and a next field, which points to the next node in the list, with the next field of the last node being null.
+
+Its prototype is as follows:
+
+```C#
+class ListNode<T>
+{
+    public T Data;
+    public ListNode<T> Next;
+}
+```
