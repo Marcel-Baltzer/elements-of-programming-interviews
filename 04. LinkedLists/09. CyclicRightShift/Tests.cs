@@ -6,7 +6,7 @@ namespace Elements_of_Programming_Interviews.LinkedLists.CyclicRightShift
     public class Tests
     {
         [Fact]
-        public void RemoveDuplicates()
+        public void CyclicallyRightShiftList()
         {
             var fifth = new ListNode<int> { Data = 2, Next = null };
             var fourth = new ListNode<int> { Data = 3, Next = fifth };

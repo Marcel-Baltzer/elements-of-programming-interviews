@@ -6,7 +6,7 @@ namespace Elements_of_Programming_Interviews.LinkedLists.EvenOddMerge
     public class Tests
     {
         [Fact]
-        public void RemoveDuplicates()
+        public void EvenOddMerge()
         {
             var fifth = new ListNode<int> { Data = 4, Next = null };
             var fourth = new ListNode<int> { Data = 3, Next = fifth };
