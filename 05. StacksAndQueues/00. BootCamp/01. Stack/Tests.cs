@@ -2,7 +2,7 @@ using Elements_of_Programming_Interviews.LinkedLists;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.BootCamp
+namespace Elements_of_Programming_Interviews.StacksAndQueues.BootCamp.Stack
 {
     public class Tests
     {

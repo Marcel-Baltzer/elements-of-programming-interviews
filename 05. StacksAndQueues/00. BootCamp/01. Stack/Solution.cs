@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Elements_of_Programming_Interviews.LinkedLists;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.BootCamp
+namespace Elements_of_Programming_Interviews.StacksAndQueues.BootCamp.Stack
 {
     public class Solution
     {
@@ -20,5 +20,7 @@ namespace Elements_of_Programming_Interviews.StacksAndQueues.BootCamp
                 System.Console.WriteLine(nodes.Pop());
             }
         }
+
+        
     }
 }
