@@ -131,6 +131,12 @@ namespace Elements_of_Programming_Interviews.StacksAndQueues.StackApi
                     cachedMaxWithCount.Push(new MaxWithCount(x, 1));
                 }
             }
+
+            // Used by Solution 10. Queue-API
+            public int Count()
+            {
+                return element.Count;
+            }
         }
     }
 }
