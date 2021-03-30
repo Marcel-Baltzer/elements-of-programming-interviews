@@ -1,4 +1,3 @@
-using System.Runtime.Intrinsics.X86;
 using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
