@@ -4,5 +4,6 @@ namespace Elements_of_Programming_Interviews.BinaryTrees
     {
         public T Data;
         public BinaryTreeNodeWithParent<T> Parent;
+        public BinaryTreeNodeWithParent<T> Left, Right;
     }
 }
