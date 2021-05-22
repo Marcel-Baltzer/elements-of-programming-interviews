@@ -1,0 +1,5 @@
+## 8. Find smallest subarray sequentially covering all values
+
+Write a program that takes two arrays of strings, and return the indices of the starting and ending index of a shortest subarray of the first array (the "paragraph" array) that "sequentially covers", i.e., contains all the strings in the second array (the "keywords" array), in the order in which they appear in the keywords array. You can assume all keywords are distinct. For example, let the paragraph array be (apple,banana,cat,apple), and the keywords array be (banana,apple). The paragraph subarray starting at index 0 and ending at index 1 does not fulfill the specification, even though it contains all the keywords, since they do not appear in the specified order. On the other hand, the subarray starting at index 1 and ending at index 3 does fulfill the specification.
+
+> Hint: For each index in the paragraph array, compute the shortest subarray ending at that index which fulfills the specification.
