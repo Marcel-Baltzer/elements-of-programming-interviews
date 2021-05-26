@@ -25,7 +25,7 @@ namespace Elements_of_Programming_Interviews._10._Sorting._03._RemoveDuplicates
                 new Solution.Name("Ian", "Bell"),
             };
             
-            list.Should().BeEquivalentTo(expectedResult);
+            list.Should().BeEquivalentTo(expectedResult, options => options.WithStrictOrdering());
         }
     }
 }
