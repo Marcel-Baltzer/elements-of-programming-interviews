@@ -31,7 +31,7 @@ namespace Elements_of_Programming_Interviews._10._Sorting._06._MergingIntervals
                 new Solution.Interval(14, 17),
             };
 
-            result.Should().BeEquivalentTo(expectedResult);
+            result.Should().BeEquivalentTo(expectedResult, options => options.WithStrictOrdering());
         }
     }
 }
