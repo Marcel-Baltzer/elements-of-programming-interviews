@@ -16,7 +16,7 @@ namespace Elements_of_Programming_Interviews._10._Sorting._02._MergeTwoSortedArr
 
             var expectedResult = new List<int>() {3, 5, 7, 11, 13, 17, 19};
 
-            a.Should().BeEquivalentTo(expectedResult);
+            a.Should().BeEquivalentTo(expectedResult, options => options.WithStrictOrdering());
         }
     }
 }
