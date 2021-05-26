@@ -16,7 +16,7 @@ namespace Elements_of_Programming_Interviews._10._Sorting._01._IntersectionTwoSo
 
             var expectedResult = new List<int>() {5, 6, 8};
 
-            result.Should().BeEquivalentTo(expectedResult);
+            result.Should().BeEquivalentTo(expectedResult, options => options.WithStrictOrdering());
         }
         
         [Fact]
@@ -29,7 +29,7 @@ namespace Elements_of_Programming_Interviews._10._Sorting._01._IntersectionTwoSo
 
             var expectedResult = new List<int>() {5, 6, 8};
 
-            result.Should().BeEquivalentTo(expectedResult);
+            result.Should().BeEquivalentTo(expectedResult, options => options.WithStrictOrdering());
         }
         
         [Fact]
@@ -42,7 +42,7 @@ namespace Elements_of_Programming_Interviews._10._Sorting._01._IntersectionTwoSo
 
             var expectedResult = new List<int>() {5, 6, 8};
 
-            result.Should().BeEquivalentTo(expectedResult);
+            result.Should().BeEquivalentTo(expectedResult, options => options.WithStrictOrdering());
         }
     }
 }
