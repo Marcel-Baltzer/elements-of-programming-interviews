@@ -34,7 +34,7 @@ namespace Elements_of_Programming_Interviews._10._Sorting._07._UnionOfIntervals
                 new(new Solution.Endpoint(12, true), new Solution.Endpoint(17, false))
             };
 
-            result.Should().BeEquivalentTo(expectedResult);
+            result.Should().BeEquivalentTo(expectedResult, options => options.WithStrictOrdering());
         }
     }
 }
