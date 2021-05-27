@@ -4,10 +4,10 @@ namespace Elements_of_Programming_Interviews._03._Strings._02._BaseConversion
     {
         public static string ConvertBase(string numAsString, int base1, int base2)
         {
-            bool isNegative = numAsString.StartsWith("-");
-            int numAsInt = 0;
+            var isNegative = numAsString.StartsWith("-");
+            var numAsInt = 0;
 
-            for (int i = (isNegative ? 1: 0); i < numAsString.Length; i++)
+            for (var i = (isNegative ? 1: 0); i < numAsString.Length; i++)
             {
                 numAsInt *= base1;
                 numAsInt += char.IsDigit(numAsString[i])
@@ -16,16 +16,16 @@ namespace Elements_of_Programming_Interviews._03._Strings._02._BaseConversion
             }
 
             return (isNegative ? "-" : "")
-                + (numAsInt == 0 ? "0" : ConsturctFromBase(numAsInt, base2));
+                + (numAsInt == 0 ? "0" : ConstructFromBase(numAsInt, base2));
         }
 
-        private static string ConsturctFromBase(int numAsInt, int @base)
+        private static string ConstructFromBase(int numAsInt, int @base)
         {
             return numAsInt == 0
                 ? ""
-                : ConsturctFromBase(numAsInt / @base, @base)
-                    + (char)(numAsInt % @base >= 10 ? 'A' + numAsInt % @base -10
-                                                    : '0' + numAsInt % @base);
+                : ConstructFromBase(numAsInt / @base, @base)
+                  + (char)(numAsInt % @base >= 10 ? 'A' + numAsInt % @base -10
+                      : '0' + numAsInt % @base);
         }
     }
 }

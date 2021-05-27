@@ -7,7 +7,7 @@ namespace Elements_of_Programming_Interviews._03._Strings._06._ReverseWordsInSen
             // Reverses the whole string first.
             Reverse(input, 0, input.Length);
 
-            int start = 0;
+            var start = 0;
             int end;
 
             while ((end = Find(input, ' ', start)) != -1)
@@ -21,26 +21,26 @@ namespace Elements_of_Programming_Interviews._03._Strings._06._ReverseWordsInSen
             Reverse(input , start, input.Length);
         }
 
-        public static void Reverse(char[] array, int start, int stopIndex)
+        private static void Reverse(char[] array, int start, int stopIndex)
         {
             if(start >= stopIndex)
             {
                 return;
             }
 
-            int last = stopIndex - 1;
+            var last = stopIndex - 1;
 
-            for(int i = start; i <= start + (last - start) / 2; i++)
+            for(var i = start; i <= start + (last - start) / 2; i++)
             {
-                char tmp = array[i];
+                var tmp = array[i];
                 array[i] = array[last - i + start];
                 array[last - i +start] = tmp;
             }
         }
 
-        public static int Find(char[] array, char c, int start)
+        private static int Find(char[] array, char c, int start)
         {
-            for (int i = start; i < array.Length; i++)
+            for (var i = start; i < array.Length; i++)
             {
                 if(array[i] == c)
                 {

@@ -11,21 +11,21 @@ namespace Elements_of_Programming_Interviews._03._Strings._13._FindSubstring
                 return -1; // sub is not a substring of text.
             }
 
-            int @base = 26;
+            const int @base = 26;
 
             // Hash codes for the substring of text and sub.
-            int textHash = 0;
-            int subHash = 0;
-            int powerS = 1; // BASE^|s| 
+            var textHash = 0;
+            var subHash = 0;
+            var powerS = 1; // BASE^|s| 
 
-            for(int i = 0; i < sub.Length; i++)
+            for(var i = 0; i < sub.Length; i++)
             {
                 powerS = i > 0 ? powerS * @base : 1;
                 textHash = textHash * @base + text[i];
                 subHash = subHash * @base + sub[i];
             }
 
-            for(int i = sub.Length; i < text.Length; i++)
+            for(var i = sub.Length; i < text.Length; i++)
             {
                 // Checks the two substrings are actually equal or not, 
                 // to protect against hash collision.

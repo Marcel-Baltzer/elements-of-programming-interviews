@@ -4,9 +4,9 @@ namespace Elements_of_Programming_Interviews._03._Strings._09._RomanToDecimal
 {
     public class Solution
     {
-        public static int RomanToInterger(string romanString)
+        public static int RomanToInteger(string romanString)
         {
-            var romanValues = new Dictionary<char,int>()
+            var romanValues = new Dictionary<char,int>
             {
                 {'I',1},
                 {'V',5},
@@ -14,12 +14,12 @@ namespace Elements_of_Programming_Interviews._03._Strings._09._RomanToDecimal
                 {'L',50},
                 {'C',100},
                 {'D',500},
-                {'M',1000},
+                {'M',1000}
             };
 
-            int sum = romanValues[romanString[romanString.Length-1]];
+            var sum = romanValues[romanString[romanString.Length-1]];
 
-            for (int i = romanString.Length -2; i >= 0; i--)
+            for (var i = romanString.Length -2; i >= 0; i--)
             {
                 if(romanValues[romanString[i]] < romanValues[romanString[i+1]])
                 {

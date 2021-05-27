@@ -6,12 +6,12 @@ namespace Elements_of_Programming_Interviews._03._Strings._12._RunLengthEncoding
     {
         public static string Decoding(string s)
         {
-            int count = 0;
+            var count = 0;
             var result = new StringBuilder();
 
-            for(int i = 0; i < s.Length; i++)
+            for(var i = 0; i < s.Length; i++)
             {
-                char c = s[i];
+                var c = s[i];
                 if(char.IsDigit(c))
                 {
                     count = count * 10 + c - '0';
@@ -33,10 +33,10 @@ namespace Elements_of_Programming_Interviews._03._Strings._12._RunLengthEncoding
 
         public static string Encoding(string s)
         {
-            int count = 1;
+            var count = 1;
             var result = new StringBuilder();
 
-            for(int i = 1; i <= s.Length; i++)
+            for(var i = 1; i <= s.Length; i++)
             {
                 if(i == s.Length || s[i] != s[i-1])
                 {

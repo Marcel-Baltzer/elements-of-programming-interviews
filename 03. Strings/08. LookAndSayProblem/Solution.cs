@@ -6,9 +6,9 @@ namespace Elements_of_Programming_Interviews._03._Strings._08._LookAndSayProblem
     {
         public static string LookAndSay(int n)
         {
-            string s = "1";
+            var s = "1";
 
-            for(int i = 1; i < n; i++)
+            for(var i = 1; i < n; i++)
             {
                 s = NextNumber(s);
             }
@@ -20,9 +20,9 @@ namespace Elements_of_Programming_Interviews._03._Strings._08._LookAndSayProblem
         {
             var result = new StringBuilder();
 
-            for(int i = 0; i < s.Length; i++)
+            for(var i = 0; i < s.Length; i++)
             {
-                int count = 1;
+                var count = 1;
                 while(i+1 < s.Length && s[i] == s[i+1])
                 {
                     i++;

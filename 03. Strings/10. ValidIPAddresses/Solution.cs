@@ -6,23 +6,23 @@ namespace Elements_of_Programming_Interviews._03._Strings._10._ValidIPAddresses
     {
         public static List<string> GetValidIpAddress(string s)
         {
-            List<string> result = new List<string>();
+            var result = new List<string>();
 
-            for(int i = 1; i < 4 && i < s.Length; i++)
+            for(var i = 1; i < 4 && i < s.Length; i++)
             {
-                string first = s.Substring(0,i);
+                var first = s.Substring(0,i);
 
                 if(IsValidPart(first))
                 {
-                    for(int j = 1; i+j < s.Length && j < 4; j++)
+                    for(var j = 1; i+j < s.Length && j < 4; j++)
                     {
-                        string second = s.Substring(i, j);
+                        var second = s.Substring(i, j);
                         if(IsValidPart(second))
                         {
-                            for(int k = 1; i+j+k < s.Length && k < 4; k++)
+                            for(var k = 1; i+j+k < s.Length && k < 4; k++)
                             {
-                                string third = s.Substring(i+j,k);
-                                string fourth = s.Substring(i+j+k);
+                                var third = s.Substring(i+j,k);
+                                var fourth = s.Substring(i+j+k);
 
                                 if(IsValidPart(third) && IsValidPart(fourth))
                                 {
@@ -49,7 +49,7 @@ namespace Elements_of_Programming_Interviews._03._Strings._10._ValidIPAddresses
                 return false;
             }
 
-            int val = int.Parse(s);
+            var val = int.Parse(s);
             return 0 <= val && val <= 255;
         }
     }

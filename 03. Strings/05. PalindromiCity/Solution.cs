@@ -5,8 +5,8 @@ namespace Elements_of_Programming_Interviews._03._Strings._05._PalindromiCity
         public static bool IsPalindrome(string s)
         {
             // i moves forward, and j moves backward.
-            int i = 0;
-            int j = s.Length-1;
+            var i = 0;
+            var j = s.Length-1;
 
             while(i < j)
             {

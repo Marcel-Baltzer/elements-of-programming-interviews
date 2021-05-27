@@ -6,7 +6,7 @@
 3. Compute the spreadsheet column encoding
 4. Replace and remove
 5. Test palindromicity
-6. Reverse all the wordsin a sentence
+6. Reverse all the words in a sentence
 7. Compute all mnemonics for a phone number (only in the java and c++ version)
 8. The look-and-say problem
 9. Convert from Roman to decimal

@@ -4,11 +4,11 @@ namespace Elements_of_Programming_Interviews._03._Strings._03._SpreadsheetEncodi
     {
         public static int SpreadsheetDecodeColumnId(string column)
         {
-            int result = 0;
+            var result = 0;
 
-            for (int i = 0; i < column.Length; i++)
+            for (var i = 0; i < column.Length; i++)
             {
-                char c = column[i];
+                var c = column[i];
                 result = result * 26 + c - 'A' +1;
             }
 

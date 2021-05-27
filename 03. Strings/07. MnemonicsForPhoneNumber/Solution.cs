@@ -14,7 +14,7 @@ namespace Elements_of_Programming_Interviews._03._Strings._07._MnemonicsForPhone
             return mnemonics;
         }
 
-        private static string[] Mapping = {"0", "1", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
+        private static readonly string[] Mapping = {"0", "1", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
 
         private static void PhoneMnemonicHelper(string phoneNumber, int digit, char[] partialMnemonic, List<string> mnemonics)
         {
@@ -27,9 +27,9 @@ namespace Elements_of_Programming_Interviews._03._Strings._07._MnemonicsForPhone
             else
             {
                 // Try all possible characters for this digit.
-                for (int i = 0; i < Mapping[phoneNumber[digit]-'0'].Length; i++)
+                for (var i = 0; i < Mapping[phoneNumber[digit]-'0'].Length; i++)
                 {
-                    char c = Mapping[phoneNumber[digit]-'0'][i];
+                    var c = Mapping[phoneNumber[digit]-'0'][i];
                     partialMnemonic[digit] = c;
                     PhoneMnemonicHelper(phoneNumber, digit +1, partialMnemonic, mnemonics);
                 }

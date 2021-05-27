@@ -7,14 +7,9 @@ namespace Elements_of_Programming_Interviews._03._Strings._01._InterconvertStrin
     {
         public static string IntToString(int x)
         {
-            bool isNegative = false;
+            var isNegative = x < 0;
 
-            if(x < 0)
-            {
-                isNegative = true;
-            }
-
-            StringBuilder s = new StringBuilder();
+            var s = new StringBuilder();
 
             do 
             {
@@ -28,17 +23,17 @@ namespace Elements_of_Programming_Interviews._03._Strings._01._InterconvertStrin
                 s.Append('-'); // Adds the negative sign back.
             }
 
-            char[] charArray = s.ToString().ToCharArray();
+            var charArray = s.ToString().ToCharArray();
             Array.Reverse(charArray);
             return new string(charArray);
         }
 
         public static int StringToInt(string s)
         {
-            int result = 0;
-            for(int i = s[0] == '-' ? 1 : 0; i < s.Length; i++)
+            var result = 0;
+            for(var i = s[0] == '-' ? 1 : 0; i < s.Length; i++)
             {
-                int digit = s[i] - '0';
+                var digit = s[i] - '0';
                 result = result * 10 + digit;
             }
 
