@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Strings.BaseConversion
+namespace Elements_of_Programming_Interviews._03._Strings._02._BaseConversion
 {
     public class Tests
     {

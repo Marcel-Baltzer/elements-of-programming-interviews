@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Strings.ValidIPAddresses
+namespace Elements_of_Programming_Interviews._03._Strings._10._ValidIPAddresses
 {
     public class Tests
     {

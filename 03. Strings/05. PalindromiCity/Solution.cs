@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.Strings.PalindromiCity
+namespace Elements_of_Programming_Interviews._03._Strings._05._PalindromiCity
 {
     public class Solution
     {

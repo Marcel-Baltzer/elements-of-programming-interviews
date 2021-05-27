@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Strings.MnemonicsForPhoneNumber
+namespace Elements_of_Programming_Interviews._03._Strings._07._MnemonicsForPhoneNumber
 {
     public class Solution
     {   

@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Elements_of_Programming_Interviews.Strings.LookAndSayProblem
+namespace Elements_of_Programming_Interviews._03._Strings._08._LookAndSayProblem
 {
     public class Solution
     {

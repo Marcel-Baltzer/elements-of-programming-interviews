@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Strings.Sinusoidally
+namespace Elements_of_Programming_Interviews._03._Strings._11._Sinusoidally
 {
     public class Tests
     {

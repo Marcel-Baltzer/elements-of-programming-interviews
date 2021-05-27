@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Strings.ValidIPAddresses
+namespace Elements_of_Programming_Interviews._03._Strings._10._ValidIPAddresses
 {
     public class Solution
     {

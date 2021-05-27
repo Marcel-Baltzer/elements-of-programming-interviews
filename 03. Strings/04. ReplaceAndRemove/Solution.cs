@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.Strings.ReplaceAndRemove
+namespace Elements_of_Programming_Interviews._03._Strings._04._ReplaceAndRemove
 {
     public class Solution
     {

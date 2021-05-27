@@ -1,8 +1,7 @@
 using System;
-using System.Linq;
 using System.Text;
 
-namespace Elements_of_Programming_Interviews.Strings.InterconvertStringsAndIntegers
+namespace Elements_of_Programming_Interviews._03._Strings._01._InterconvertStringsAndIntegers
 {
     public class Solution
     {

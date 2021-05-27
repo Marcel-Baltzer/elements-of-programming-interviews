@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.Strings.SpreadsheetEncoding
+namespace Elements_of_Programming_Interviews._03._Strings._03._SpreadsheetEncoding
 {
     public class Solution
     {

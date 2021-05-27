@@ -1,8 +1,7 @@
-using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Strings.MnemonicsForPhoneNumber
+namespace Elements_of_Programming_Interviews._03._Strings._07._MnemonicsForPhoneNumber
 {
     public class Tests
     {

@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Strings.RomanToDecimal
+namespace Elements_of_Programming_Interviews._03._Strings._09._RomanToDecimal
 {
     public class Tests
     {

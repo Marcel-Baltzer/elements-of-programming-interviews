@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.Strings.FindSubstring
+namespace Elements_of_Programming_Interviews._03._Strings._13._FindSubstring
 {
     public class Solution
     {

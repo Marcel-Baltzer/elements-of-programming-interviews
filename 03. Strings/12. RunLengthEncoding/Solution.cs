@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Elements_of_Programming_Interviews.Strings.RunLengthEncoding
+namespace Elements_of_Programming_Interviews._03._Strings._12._RunLengthEncoding
 {
     public class Solution
     {

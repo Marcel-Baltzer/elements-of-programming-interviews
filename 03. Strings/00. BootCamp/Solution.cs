@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.Strings.BootCamp
+namespace Elements_of_Programming_Interviews._03._Strings._00._BootCamp
 {
     public class Solution
     {

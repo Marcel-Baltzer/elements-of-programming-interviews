@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Strings.ReverseWordsInSentence
+namespace Elements_of_Programming_Interviews._03._Strings._06._ReverseWordsInSentence
 {
     public class Tests
     {
