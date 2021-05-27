@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.ReverseBits
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._03._ReverseBits
 {
     public class Tests
     {

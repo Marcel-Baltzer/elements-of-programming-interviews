@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.Division
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._06_.Division
 {
     public class Solution
     {

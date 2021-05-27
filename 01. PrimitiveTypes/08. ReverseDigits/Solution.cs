@@ -1,6 +1,6 @@
 using System;
 
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.ReverseDigits
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._08._ReverseDigits
 {
     public class Solution
     {

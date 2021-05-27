@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.Palindrome
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._09._Palindrome
 {
     public class Tests
     {

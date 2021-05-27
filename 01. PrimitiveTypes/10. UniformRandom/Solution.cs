@@ -1,6 +1,6 @@
 using System;
 
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.UniformRandom
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._10._UniformRandom
 {
     public class Solution
     {

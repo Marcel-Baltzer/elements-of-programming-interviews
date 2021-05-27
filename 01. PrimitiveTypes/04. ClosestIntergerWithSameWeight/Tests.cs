@@ -1,8 +1,8 @@
-using Xunit;
 using System;
 using FluentAssertions;
+using Xunit;
 
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.ClosestIntergerWithSameWeight
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._04._ClosestIntergerWithSameWeight
 {
     public class Tests
     {

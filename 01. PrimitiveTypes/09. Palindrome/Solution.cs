@@ -1,6 +1,6 @@
 using System;
 
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.Palindrome
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._09._Palindrome
 {
     public class Solution
     {
@@ -36,7 +36,7 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.Palindrome
                 return false;
             }
 
-            var reverse = ReverseDigits.Solution.ReverseDigits(number);
+            var reverse = _08._ReverseDigits.Solution.ReverseDigits(number);
 
             return number == reverse;
         }

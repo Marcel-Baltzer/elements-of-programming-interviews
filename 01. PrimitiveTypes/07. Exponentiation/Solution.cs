@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.Exponentiation
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._07._Exponentiation
 {
     public class Solution
     {

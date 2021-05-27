@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.ReverseBits
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._03._ReverseBits
 {
     public class Solution
     {
@@ -9,7 +9,7 @@ namespace Elements_of_Programming_Interviews.PrimitiveTypes.ReverseBits
 
             while (i < j) 
             {
-                number = SwapBits.Solution.SwapBits(number, i, j);
+                number = _02._SwapBits.Solution.SwapBits(number, i, j);
                 i++;
                 j--;
             }

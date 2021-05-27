@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.Parity
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._01._Parity
 {
     public class Solution
     {

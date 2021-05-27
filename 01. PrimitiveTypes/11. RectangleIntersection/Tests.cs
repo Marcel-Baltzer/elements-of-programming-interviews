@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.RectangleIntersection
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._11._RectangleIntersection
 {
     public class Tests
     {

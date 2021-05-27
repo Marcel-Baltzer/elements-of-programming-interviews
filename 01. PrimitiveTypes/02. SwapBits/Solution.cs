@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.PrimitiveTypes.SwapBits
+namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._02._SwapBits
 {
     public class Solution
     {
