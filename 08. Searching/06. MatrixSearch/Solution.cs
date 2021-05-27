@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Searching.MatrixSearch
+namespace Elements_of_Programming_Interviews._08._Searching._06._MatrixSearch
 {
     public class Solution
     {

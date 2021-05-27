@@ -1,5 +1,4 @@
-using System.Diagnostics.Contracts;
-namespace Elements_of_Programming_Interviews.Searching.RealSquareRoot
+namespace Elements_of_Programming_Interviews._08._Searching._05._RealSquareRoot
 {
     public class Solution
     {

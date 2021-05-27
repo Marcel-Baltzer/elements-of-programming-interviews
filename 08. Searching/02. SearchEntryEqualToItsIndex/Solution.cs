@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Searching.SearchEntryEqualToItsIndex
+namespace Elements_of_Programming_Interviews._08._Searching._02._SearchEntryEqualToItsIndex
 {
     public class Solution
     {

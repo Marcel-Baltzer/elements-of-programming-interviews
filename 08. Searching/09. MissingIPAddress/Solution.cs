@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Searching.MissingIPAddress
+namespace Elements_of_Programming_Interviews._08._Searching._09._MissingIPAddress
 {
     public class Solution
     {

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Searching.SearchEntryEqualToItsIndex
+namespace Elements_of_Programming_Interviews._08._Searching._02._SearchEntryEqualToItsIndex
 {
     public class Tests
     {

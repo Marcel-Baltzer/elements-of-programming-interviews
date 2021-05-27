@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Searching.FindMinMax
+namespace Elements_of_Programming_Interviews._08._Searching._07._FindMinMax
 {
     public class Tests
     {

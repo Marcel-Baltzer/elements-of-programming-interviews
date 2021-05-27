@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Searching.FindKthLargestElement
+namespace Elements_of_Programming_Interviews._08._Searching._08._FindKthLargestElement
 {
     public class Tests
     {

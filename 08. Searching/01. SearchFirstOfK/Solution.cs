@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Searching.SearchFirstOfK
+namespace Elements_of_Programming_Interviews._08._Searching._01._SearchFirstOfK
 {
     public class Solution
     {

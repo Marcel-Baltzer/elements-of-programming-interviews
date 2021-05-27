@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Searching.FindKthLargestElement
+namespace Elements_of_Programming_Interviews._08._Searching._08._FindKthLargestElement
 {
     public class Solution
     {

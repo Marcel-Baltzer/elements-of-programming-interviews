@@ -1,7 +1,6 @@
-using System.Collections.ObjectModel;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Searching.BootCamp
+namespace Elements_of_Programming_Interviews._08._Searching._00._BootCamp
 {
     public class Solution
     {

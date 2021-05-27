@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Searching.FindMinMax
+namespace Elements_of_Programming_Interviews._08._Searching._07._FindMinMax
 {
     public class Solution
     {

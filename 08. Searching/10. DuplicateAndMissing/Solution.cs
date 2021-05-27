@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Searching.DuplicateAndMissing
+namespace Elements_of_Programming_Interviews._08._Searching._10._DuplicateAndMissing
 {
     public class Solution
     {

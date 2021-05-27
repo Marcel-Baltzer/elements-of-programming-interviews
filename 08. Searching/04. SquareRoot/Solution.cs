@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.Searching.SquareRoot
+namespace Elements_of_Programming_Interviews._08._Searching._04._SquareRoot
 {
     public class Solution
     {
