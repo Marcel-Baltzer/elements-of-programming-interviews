@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Arrays.BuyAndSellStockTwice
+namespace Elements_of_Programming_Interviews._02._Arrays._07._BuyAndSellStockTwice
 {
     public class Solution
     {

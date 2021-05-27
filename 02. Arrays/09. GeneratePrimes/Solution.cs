@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.Arrays.GeneratePrimes
+namespace Elements_of_Programming_Interviews._02._Arrays._09._GeneratePrimes
 {
     public class Solution
     {

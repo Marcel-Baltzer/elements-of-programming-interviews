@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Arrays.Alternation
+namespace Elements_of_Programming_Interviews._02._Arrays._08._Alternation
 {
     public class Solution
     {

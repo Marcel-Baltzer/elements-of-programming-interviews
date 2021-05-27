@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Arrays.BootCamp
+namespace Elements_of_Programming_Interviews._02._Arrays._00._BootCamp
 {
     public class Tests
     {

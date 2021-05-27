@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Arrays.ComputeNextPermutation
+namespace Elements_of_Programming_Interviews._02._Arrays._11._ComputeNextPermutation
 {
     public class Solution
     {

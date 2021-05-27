@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.Arrays.DutchFlagPartition
+namespace Elements_of_Programming_Interviews._02._Arrays._01._DutchFlagPartition
 {
     public enum Color { RED , WHITE , BLUE };
 

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.Arrays.SampleOfflineData
+namespace Elements_of_Programming_Interviews._02._Arrays._12._SampleOfflineData
 {
     public class Solution
     {

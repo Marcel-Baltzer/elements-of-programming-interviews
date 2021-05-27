@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.Arrays.SudokuChecker
+namespace Elements_of_Programming_Interviews._02._Arrays._17._SudokuChecker
 {
     public class Solution
     {

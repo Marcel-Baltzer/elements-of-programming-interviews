@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.Arrays.ArbitraryPrecisionMultiply
+namespace Elements_of_Programming_Interviews._02._Arrays._03._ArbitraryPrecisionMultiply
 {
     public class Solution
     {

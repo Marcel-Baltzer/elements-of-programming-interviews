@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.Arrays.NonuniformRandomNumbers
+namespace Elements_of_Programming_Interviews._02._Arrays._16._NonuniformRandomNumbers
 {
     public class Solution
     {

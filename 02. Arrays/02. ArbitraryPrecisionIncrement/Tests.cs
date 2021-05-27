@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Arrays.ArbitraryPrecisionIncrement
+namespace Elements_of_Programming_Interviews._02._Arrays._02._ArbitraryPrecisionIncrement
 {
     public class Tests
     {

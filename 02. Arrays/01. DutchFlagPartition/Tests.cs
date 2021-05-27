@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Arrays.DutchFlagPartition
+namespace Elements_of_Programming_Interviews._02._Arrays._01._DutchFlagPartition
 {
     public class Tests
     {

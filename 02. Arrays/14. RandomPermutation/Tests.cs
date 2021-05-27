@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Arrays.RandomPermutation
+namespace Elements_of_Programming_Interviews._02._Arrays._14._RandomPermutation
 {
     public class Tests
     {

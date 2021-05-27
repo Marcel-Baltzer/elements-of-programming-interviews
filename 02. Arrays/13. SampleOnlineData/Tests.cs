@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using FluentAssertions;
-using FakeItEasy;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.Arrays.SampleOnlineData
+namespace Elements_of_Programming_Interviews._02._Arrays._13._SampleOnlineData
 {
     public class Tests
     {
