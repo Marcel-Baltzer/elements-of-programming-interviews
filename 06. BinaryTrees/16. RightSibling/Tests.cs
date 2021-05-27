@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.RightSibling
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._16._RightSibling
 {
     public class Tests
     {

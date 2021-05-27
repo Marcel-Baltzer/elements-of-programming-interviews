@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.Exterior
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._15._Exterior
 {
     public class Solution
     {

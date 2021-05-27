@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.BinaryTrees.Locking
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._17._Locking
 {
     public class Solution
     {

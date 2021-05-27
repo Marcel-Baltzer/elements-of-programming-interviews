@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.InorderTraversal
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._07._InorderTraversal
 {
     public class Solution
     {

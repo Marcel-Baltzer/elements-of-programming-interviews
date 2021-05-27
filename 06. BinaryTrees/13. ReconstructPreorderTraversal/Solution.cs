@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.ReconstructPreorderTraversal
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._13._ReconstructPreorderTraversal
 {
     public class Solution
     {

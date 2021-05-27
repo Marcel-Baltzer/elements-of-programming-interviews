@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.ReconstructTraversalData
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._12._ReconstructTraversalData
 {
     public class Solution
     {

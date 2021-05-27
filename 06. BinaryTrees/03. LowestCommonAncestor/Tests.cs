@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.LowestCommonAncestor
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._03._LowestCommonAncestor
 {
     public class Tests
     {

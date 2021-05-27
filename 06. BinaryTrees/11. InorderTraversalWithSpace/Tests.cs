@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.InorderTraversalWithSpace
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._11._InorderTraversalWithSpace
 {
     public class Tests
     {

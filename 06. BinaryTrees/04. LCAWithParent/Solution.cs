@@ -1,5 +1,6 @@
 using System;
-namespace Elements_of_Programming_Interviews.BinaryTrees.LCA
+
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._04._LCAWithParent
 {
     public class Solution
     {

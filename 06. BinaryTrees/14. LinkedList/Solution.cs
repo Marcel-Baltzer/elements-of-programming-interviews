@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.LinkedList
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._14._LinkedList
 {
     public class Solution
     {

@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.Successor
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._10._Successor
 {
     public class Tests
     {

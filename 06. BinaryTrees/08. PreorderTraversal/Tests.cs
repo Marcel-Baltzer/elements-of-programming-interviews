@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.PreorderTraversal
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._08._PreorderTraversal
 {
     public class Tests
     {

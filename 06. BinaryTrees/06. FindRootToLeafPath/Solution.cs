@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.BinaryTrees.FindRootToLeafPath
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._06._FindRootToLeafPath
 {
     public class Solution
     {

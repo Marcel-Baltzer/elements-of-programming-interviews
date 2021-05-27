@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.BinaryTrees.LinkedList
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._14._LinkedList
 {
     public class Tests
     {

@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.BinaryTrees.SumRootToLeafPath
+namespace Elements_of_Programming_Interviews._06._BinaryTrees._05._SumRootToLeafPath
 {
     public class Solution
     {
