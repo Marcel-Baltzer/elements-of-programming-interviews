@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Castle.Core.Internal;
 
-namespace Elements_of_Programming_Interviews.HashTables.AnonymousLetter
+namespace Elements_of_Programming_Interviews._09._HashTables._02._AnonymousLetter
 {
     public class Solution
     {

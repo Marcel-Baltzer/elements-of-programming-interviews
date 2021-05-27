@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.HashTables.FrequentQueries
+namespace Elements_of_Programming_Interviews._09._HashTables._05._FrequentQueries
 {
     public class Solution
     {

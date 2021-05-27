@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.HashTables.ISBNCache
+namespace Elements_of_Programming_Interviews._09._HashTables._03._ISBNCache
 {
     public class Tests
     {

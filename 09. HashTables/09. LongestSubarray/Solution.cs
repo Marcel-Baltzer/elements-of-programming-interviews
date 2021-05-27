@@ -1,8 +1,7 @@
-
 using System;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.HashTables.LongestSubarray
+namespace Elements_of_Programming_Interviews._09._HashTables._09._LongestSubarray
 {
     public class Solution
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.HashTables.SmallestSubarraySequentially
+namespace Elements_of_Programming_Interviews._09._HashTables._08._SmallestSubarraySequentially
 {
     public class Solution
     {

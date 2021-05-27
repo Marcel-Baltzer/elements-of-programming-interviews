@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.HashTables.LongestContainedInterval
+namespace Elements_of_Programming_Interviews._09._HashTables._10._LongestContainedInterval
 {
     public class Tests
     {

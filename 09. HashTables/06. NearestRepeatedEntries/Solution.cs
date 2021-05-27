@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.HashTables.NearestRepeatedEntries
+namespace Elements_of_Programming_Interviews._09._HashTables._06._NearestRepeatedEntries
 {
     public class Solution
     {

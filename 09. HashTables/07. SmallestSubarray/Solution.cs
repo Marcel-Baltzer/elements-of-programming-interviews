@@ -1,8 +1,7 @@
-
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.HashTables.SmallestSubarray
+namespace Elements_of_Programming_Interviews._09._HashTables._07._SmallestSubarray
 {
     public class Solution
     {

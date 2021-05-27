@@ -1,7 +1,4 @@
-using FluentAssertions;
-using Xunit;
-
-namespace Elements_of_Programming_Interviews.HashTables.TopThreeScores
+namespace Elements_of_Programming_Interviews._09._HashTables._11._TopThreeScores
 {
     public class Tests
     {

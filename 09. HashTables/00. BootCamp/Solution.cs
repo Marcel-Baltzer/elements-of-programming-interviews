@@ -1,10 +1,8 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 
-namespace Elements_of_Programming_Interviews.HashTables.BootCamp
+namespace Elements_of_Programming_Interviews._09._HashTables._00._BootCamp
 {
     public class Solution
     {

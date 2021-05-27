@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.HashTables.Collatz
+namespace Elements_of_Programming_Interviews._09._HashTables._13._Collatz
 {
     public class Tests
     {

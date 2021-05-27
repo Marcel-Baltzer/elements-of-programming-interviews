@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.HashTables.LongestSubarray
+namespace Elements_of_Programming_Interviews._09._HashTables._09._LongestSubarray
 {
     public class Tests
     {

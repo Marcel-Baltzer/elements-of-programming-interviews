@@ -1,8 +1,7 @@
-
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.HashTables.ISBNCache
+namespace Elements_of_Programming_Interviews._09._HashTables._03._ISBNCache
 {
     public class Solution
     {

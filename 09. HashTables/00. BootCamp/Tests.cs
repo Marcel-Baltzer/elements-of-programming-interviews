@@ -1,9 +1,8 @@
 using System.Collections.Generic;
-using System.Linq;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.HashTables.BootCamp
+namespace Elements_of_Programming_Interviews._09._HashTables._00._BootCamp
 {
     public class Tests
     {

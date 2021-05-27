@@ -1,8 +1,6 @@
 using System.Collections.Generic;
-using System.Security.Cryptography;
-using Microsoft.VisualBasic.CompilerServices;
 
-namespace Elements_of_Programming_Interviews.HashTables.Decompositions
+namespace Elements_of_Programming_Interviews._09._HashTables._12._Decompositions
 {
     public class Solution
     {
