@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Elements_of_Programming_Interviews._04._LinkedLists;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.BootCamp.Stack
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._00._BootCamp._01._Stack
 {
     public class Solution
     {

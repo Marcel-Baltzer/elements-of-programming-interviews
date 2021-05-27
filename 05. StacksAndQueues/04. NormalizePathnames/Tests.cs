@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.NormalizePathnames
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._04._NormalizePathnames
 {
     public class Tests
     {

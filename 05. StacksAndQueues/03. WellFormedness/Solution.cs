@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.WellFormedness
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._03._WellFormedness
 {
     public class Solution
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.SearchPostingsList
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._05._SearchPostingsList
 {
     public class Solution
     {

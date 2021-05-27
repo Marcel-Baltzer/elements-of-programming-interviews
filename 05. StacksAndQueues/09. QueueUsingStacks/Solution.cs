@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.QueueUsingStacks
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._09._QueueUsingStacks
 {
     public class Solution
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.CircularQueue
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._08._CircularQueue
 {
     public class Solution
     {

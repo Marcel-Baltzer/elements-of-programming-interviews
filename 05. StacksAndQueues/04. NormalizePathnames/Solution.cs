@@ -1,9 +1,9 @@
-using System.Linq;
-using System.Text;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.NormalizePathnames
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._04._NormalizePathnames
 {
     public class Solution
     {

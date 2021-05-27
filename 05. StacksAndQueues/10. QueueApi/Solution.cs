@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-namespace Elements_of_Programming_Interviews.StacksAndQueues.QueueApi
+
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._10._QueueApi
 {
     public class Solution
     {
@@ -55,8 +56,8 @@ namespace Elements_of_Programming_Interviews.StacksAndQueues.QueueApi
 
         public class QueueWithStacksAndMax
         {
-            private StackApi.Solution.StackWithCachedMaxCount enqueue = new StackApi.Solution.StackWithCachedMaxCount();
-            private StackApi.Solution.StackWithCachedMaxCount dequeue = new StackApi.Solution.StackWithCachedMaxCount();
+            private _01._StackApi.Solution.StackWithCachedMaxCount enqueue = new _01._StackApi.Solution.StackWithCachedMaxCount();
+            private _01._StackApi.Solution.StackWithCachedMaxCount dequeue = new _01._StackApi.Solution.StackWithCachedMaxCount();
 
             public void Enqueue(int x)
             {

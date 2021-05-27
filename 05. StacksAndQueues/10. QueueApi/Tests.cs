@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.QueueApi
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._10._QueueApi
 {
     public class Tests
     {

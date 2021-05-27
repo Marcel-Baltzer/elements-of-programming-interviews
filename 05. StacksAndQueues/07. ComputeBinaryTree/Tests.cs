@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.ComputeBinaryTree
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._07._ComputeBinaryTree
 {
     public class Tests
     {

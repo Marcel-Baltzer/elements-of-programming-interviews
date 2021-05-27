@@ -1,8 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System;
 
-namespace Elements_of_Programming_Interviews.StacksAndQueues.BootCamp.Queue
+namespace Elements_of_Programming_Interviews._05._StacksAndQueues._00._BootCamp._02._Queue
 {
     public class Solution
     {
