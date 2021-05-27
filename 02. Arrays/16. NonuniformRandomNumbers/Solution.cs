@@ -8,8 +8,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._16._NonuniformRandomNu
     {
 public static int NonuniformRandomNumberGeneration(List<int> values, List<double> probabilities)
         {
-            var prefixSumOfProbabilities = new List<double>();
-            prefixSumOfProbabilities.Add(0.0);
+            var prefixSumOfProbabilities = new List<double> {0.0};
 
             // Creating the endpoints for the intervals 
             // corresponding to the probabilities.
@@ -22,7 +21,7 @@ public static int NonuniformRandomNumberGeneration(List<int> values, List<double
             // Get a random number in [0.0,1.0).
             var uniform01 = r.NextDouble();
             // Find the index of the interval that uniformSIl lies in.
-            int it = prefixSumOfProbabilities.BinarySearch(uniform01);
+            var it = prefixSumOfProbabilities.BinarySearch(uniform01);
 
             if(it < 0)
             {
@@ -35,8 +34,8 @@ public static int NonuniformRandomNumberGeneration(List<int> values, List<double
                 //
                 // Therefore , if the return value is negative , by taking its absolute
                 // value and adding 1 to it , we get the desired index.
-                var intervalldx = (Math.Abs(it) - 1) - 1;
-                return values[intervalldx];
+                var intervalIdx = (Math.Abs(it) - 1) - 1;
+                return values[intervalIdx];
             }
             else
             {

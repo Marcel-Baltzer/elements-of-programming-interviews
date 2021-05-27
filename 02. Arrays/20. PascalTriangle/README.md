@@ -1,4 +1,4 @@
-## 20. Compute rowsin Pascal's Triangle
+## 20. Compute rows in Pascal's Triangle
 
 ![Pascal Triangle](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
 

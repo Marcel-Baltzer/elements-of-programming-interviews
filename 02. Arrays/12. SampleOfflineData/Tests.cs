@@ -9,11 +9,11 @@ namespace Elements_of_Programming_Interviews._02._Arrays._12._SampleOfflineData
         [Fact]
         public void RandomSampling()
         {
-            var array = new List<int>() {3,7,5,11};
+            var array = new List<int> {3,7,5,11};
 
             Solution.RandomSampling(3, array);
 
-            var arrayCopy = new List<int>() {3,7,5,11};
+            var arrayCopy = new List<int> {3,7,5,11};
 
             array.Should().BeEquivalentTo(arrayCopy, options => options.WithoutStrictOrdering());
         }

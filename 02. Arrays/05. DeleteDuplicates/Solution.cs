@@ -13,9 +13,9 @@ namespace Elements_of_Programming_Interviews._02._Arrays._05._DeleteDuplicates
                 return 0;
             }
 
-            int writeIndex = 1;
+            var writeIndex = 1;
 
-            for(int i = 1; i < sortedArray.Count; i++)
+            for(var i = 1; i < sortedArray.Count; i++)
             {
                 if(!sortedArray[writeIndex-1].Equals(sortedArray[i]))
                 {

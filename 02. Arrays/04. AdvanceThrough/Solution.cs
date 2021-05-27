@@ -7,15 +7,15 @@ namespace Elements_of_Programming_Interviews._02._Arrays._04._AdvanceThrough
     {
         public static bool CanReachEnd(List<int> maxAdvanceSteps)
         {
-            int furthesReachSoFar = 0;
-            int lastIndex = maxAdvanceSteps.Count -1;
+            var furthestReachSoFar = 0;
+            var lastIndex = maxAdvanceSteps.Count -1;
 
-            for(int i = 0; i <= furthesReachSoFar && furthesReachSoFar < lastIndex; i++)
+            for(var i = 0; i <= furthestReachSoFar && furthestReachSoFar < lastIndex; i++)
             {
-                furthesReachSoFar = Math.Max(furthesReachSoFar, i + maxAdvanceSteps[i]);
+                furthestReachSoFar = Math.Max(furthestReachSoFar, i + maxAdvanceSteps[i]);
             }
 
-            return furthesReachSoFar >= lastIndex;
+            return furthestReachSoFar >= lastIndex;
         }
     }
 }

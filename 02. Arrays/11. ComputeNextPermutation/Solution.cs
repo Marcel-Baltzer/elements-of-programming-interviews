@@ -4,17 +4,16 @@ namespace Elements_of_Programming_Interviews._02._Arrays._11._ComputeNextPermuta
 {
     public class Solution
     {
-        static void Swap<T>(List<T> list, int i, int j)
+        private static void Swap<T>(IList<T> list, int i, int j)
         {
-            T temp;
-            temp = list[i];
+            var temp = list[i];
             list[i] = list[j];
             list[j] = temp;
         }
 
         public static List<int> NextPermutation(List<int> permutation)
         {
-            int k = permutation.Count - 2;
+            var k = permutation.Count - 2;
             while (k >=0 && permutation[k] >= permutation[k+1])
             {
                 k--;
@@ -31,11 +30,11 @@ namespace Elements_of_Programming_Interviews._02._Arrays._11._ComputeNextPermuta
             // so if we search in reverse order, the first entry that is greater than
             // permutation[k] is the smallest such entry.
 
-            for (int i = permutation.Count -1; i > k ; i--)
+            for (var i = permutation.Count -1; i > k ; i--)
             {
                 if(permutation[i] > permutation[k])
                 {
-                    Swap<int>(permutation, k, i);
+                    Swap(permutation, k, i);
                     break;
                 }
             }

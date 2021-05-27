@@ -6,9 +6,9 @@ namespace Elements_of_Programming_Interviews._02._Arrays._14._RandomPermutation
     {
         public static List<int> ComputeRandomPermutation(int size)
         {
-            List<int> permutation = new List<int>(size);
+            var permutation = new List<int>(size);
 
-            for(int i = 0; i < size; i++)
+            for(var i = 0; i < size; i++)
             {
                 permutation.Add(i);
             }

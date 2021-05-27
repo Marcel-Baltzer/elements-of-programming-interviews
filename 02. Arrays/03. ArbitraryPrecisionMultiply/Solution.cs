@@ -8,16 +8,16 @@ namespace Elements_of_Programming_Interviews._02._Arrays._03._ArbitraryPrecision
     {
         public static List<int> Multiply(List<int> numberOne, List<int> numberTwo)
         {
-            int sign = numberOne[0] < 0 || numberTwo[0] < 0 ? -1 : 1;
+            var sign = numberOne[0] < 0 || numberTwo[0] < 0 ? -1 : 1;
 
             numberOne[0] = Math.Abs(numberOne[0]);
             numberTwo[0] = Math.Abs(numberTwo[0]);
             
             var result = new List<int>(new int[numberOne.Count + numberTwo.Count]);
         
-            for(int i = numberOne.Count -1; i >= 0; i--)
+            for(var i = numberOne.Count -1; i >= 0; i--)
             {
-                for(int j = numberTwo.Count -1; j >= 0; j--)
+                for(var j = numberTwo.Count -1; j >= 0; j--)
                 {
                     result[i+j+1] = result[i+j+1] + numberOne[i] * numberTwo[j];
                     result[i+j] = result[i+j] + result[i+j+1] / 10;
@@ -26,7 +26,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._03._ArbitraryPrecision
             }
 
             // Remove the leading zeroes.
-            int firstNotZero = 0;
+            var firstNotZero = 0;
             while (firstNotZero < result.Count && result[firstNotZero] == 0) 
             {
                 firstNotZero++;

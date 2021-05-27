@@ -6,35 +6,35 @@ namespace Elements_of_Programming_Interviews._02._Arrays._01._DutchFlagPartition
 {
     public class Tests
     {
-        List<Color> colours;
-        List<Color> expectedColours;
+        private readonly List<Color> colours;
+        private readonly List<Color> expectedColours;
 
         public Tests()
         {
             colours = new List<Color>() 
             {
-                Color.BLUE,
-                Color.RED, 
-                Color.WHITE,
-                Color.WHITE,
-                Color.RED, 
-                Color.BLUE,
-                Color.RED,
-                Color.WHITE,
-                Color.BLUE
+                Color.Blue,
+                Color.Red, 
+                Color.White,
+                Color.White,
+                Color.Red, 
+                Color.Blue,
+                Color.Red,
+                Color.White,
+                Color.Blue
             };
 
             expectedColours = new List<Color>() 
             {
-                Color.RED,
-                Color.RED, 
-                Color.RED,
-                Color.WHITE,
-                Color.WHITE, 
-                Color.WHITE,
-                Color.BLUE,
-                Color.BLUE,
-                Color.BLUE,
+                Color.Red,
+                Color.Red, 
+                Color.Red,
+                Color.White,
+                Color.White, 
+                Color.White,
+                Color.Blue,
+                Color.Blue,
+                Color.Blue,
             };
         }
 

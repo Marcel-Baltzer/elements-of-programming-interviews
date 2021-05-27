@@ -6,10 +6,10 @@ namespace Elements_of_Programming_Interviews._02._Arrays._02._ArbitraryPrecision
     {
         public static List<int> PlusOne(List<int> number)
         {
-            int n = number.Count - 1;
+            var n = number.Count - 1;
             number[n] = number[n] + 1;
 
-            for (int i = n; i>0 && number[i] == 10; i--)
+            for (var i = n; i>0 && number[i] == 10; i--)
             {
                 number[i] = 0;
                 number[i-1] = number[i-1] + 1;

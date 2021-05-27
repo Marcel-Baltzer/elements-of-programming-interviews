@@ -1,4 +1,4 @@
-## 9. Enumerate all primesto n
+## 9. Enumerate all primes to n
 
 A natural number is called a prime if it is bigger than 1 and has no divisors other than 1 and itself.
 

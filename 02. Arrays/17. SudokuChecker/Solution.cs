@@ -10,7 +10,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._17._SudokuChecker
         public static bool IsValidSudoku(List<List<int>> partialAssigment)
         {
             // Check row constraints.
-            for(int row = 0; row < partialAssigment.Count; row++)
+            for(var row = 0; row < partialAssigment.Count; row++)
             {
                 if(HasDuplicate(partialAssigment, row, row+1, 0, partialAssigment.Count))
                 {
@@ -19,7 +19,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._17._SudokuChecker
             }
 
             // Check column constraints.
-            for(int column = 0; column < partialAssigment.Count; column++)
+            for(var column = 0; column < partialAssigment.Count; column++)
             {
                 if(HasDuplicate(partialAssigment, 0, partialAssigment.Count, column, column+1))
                 {
@@ -28,10 +28,10 @@ namespace Elements_of_Programming_Interviews._02._Arrays._17._SudokuChecker
             }
 
             // Check region constraints.
-            int regionSize = (int)Math.Sqrt(partialAssigment.Count);
-            for (int row = 0; row < regionSize; row++)
+            var regionSize = (int)Math.Sqrt(partialAssigment.Count);
+            for (var row = 0; row < regionSize; row++)
             {
-                for(int column = 0; column < regionSize; column++)
+                for(var column = 0; column < regionSize; column++)
                 {
                     if(HasDuplicate(partialAssigment, regionSize * row, regionSize * (row +1), regionSize * column, regionSize * (column+1)))
                     {
@@ -47,11 +47,11 @@ namespace Elements_of_Programming_Interviews._02._Arrays._17._SudokuChecker
         // contains any duplicates in {1, 2, ..., partialAssignment.Count}; otherwise return false.
         private static bool HasDuplicate(List<List<int>> partialAssigment, int startRow, int endRow, int startCol, int endCol)
         {
-            List<bool> isPresent = Enumerable.Repeat(false, partialAssigment.Count+1).ToList();;
+            var isPresent = Enumerable.Repeat(false, partialAssigment.Count+1).ToList();
 
-            for(int i = startRow; i < endRow; i++)
+            for(var i = startRow; i < endRow; i++)
             {
-                for(int j = startCol; j < endCol; j++)
+                for(var j = startCol; j < endCol; j++)
                 {
                     if(partialAssigment[i][j] != 0 && isPresent[partialAssigment[i][j]])
                     {
@@ -65,7 +65,4 @@ namespace Elements_of_Programming_Interviews._02._Arrays._17._SudokuChecker
             return false;
         }
     }
-
-
-
 }

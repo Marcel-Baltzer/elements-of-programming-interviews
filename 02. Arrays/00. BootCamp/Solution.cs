@@ -4,8 +4,8 @@ namespace Elements_of_Programming_Interviews._02._Arrays._00._BootCamp
     {
         public static void EvenOdd(int[] array)
         {
-            int nextEven = 0;
-            int nextOdd = array.Length -1;
+            var nextEven = 0;
+            var nextOdd = array.Length -1;
 
             while (nextEven < nextOdd)
             {
@@ -15,7 +15,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._00._BootCamp
                 } 
                 else
                 {
-                    int temp = array[nextEven];
+                    var temp = array[nextEven];
                     array[nextEven] = array[nextOdd];
                     array[nextOdd] = temp;
                     nextOdd--;

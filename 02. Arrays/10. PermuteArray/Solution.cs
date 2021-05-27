@@ -4,26 +4,25 @@ namespace Elements_of_Programming_Interviews._02._Arrays._10._PermuteArray
 {
     public class Solution
     {
-        static void Swap<T>(List<T> list, int i, int j)
+        private static void Swap<T>(IList<T> list, int i, int j)
         {
-            T temp;
-            temp = list[i];
+            var temp = list[i];
             list[i] = list[j];
             list[j] = temp;
         }
 
         public static void ApplyPermutation(List<int> permutation, List<int> array)
         {
-            for(int i = 0; i < array.Count; i++)
+            for(var i = 0; i < array.Count; i++)
             {
                 // Check if the element at index i has not been moved 
                 // by checking if permutation[i] is nonnegative.
-                int next = i;
+                var next = i;
 
                 while(permutation[next] >= 0)
                 {
-                    Swap<int>(array, i, permutation[next]);
-                    int temp = permutation[next];
+                    Swap(array, i, permutation[next]);
+                    var temp = permutation[next];
 
                     // Subtracts permutation.Count from an entry in permutation to make it negative,
                     // which indicates the corresponding move has been performed.
@@ -33,7 +32,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._10._PermuteArray
             }
 
             //Restore permutation.
-            for(int i = 0; i < permutation.Count; i++)
+            for(var i = 0; i < permutation.Count; i++)
             {
                 permutation[i] = permutation[i] + permutation.Count;
             }
@@ -41,11 +40,11 @@ namespace Elements_of_Programming_Interviews._02._Arrays._10._PermuteArray
 
         public static void ApplyPermutationCyclic(List<int> permutation, List<int> array)
         {
-            for (int i = 0; i < array.Count; i++)
+            for (var i = 0; i < array.Count; i++)
             {
                 //Traverses the cycle to see if i is the minimum element.
-                bool isMin = true;
-                int j = permutation[i];
+                var isMin = true;
+                var j = permutation[i];
                 
                 while(j != i)
                 {
@@ -67,12 +66,12 @@ namespace Elements_of_Programming_Interviews._02._Arrays._10._PermuteArray
 
         private static void CyclicPermutation(int start, List<int> permutation, List<int> array)
         {
-            int i = start;
-            int temp = array[start];
+            var i = start;
+            var temp = array[start];
             do 
             {
-                int nextI = permutation[i];
-                int nextTemp = array[nextI];
+                var nextI = permutation[i];
+                var nextTemp = array[nextI];
                 array[nextI] = temp;
                 i = nextI;
                 temp = nextTemp;

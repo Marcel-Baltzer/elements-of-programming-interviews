@@ -11,20 +11,20 @@ namespace Elements_of_Programming_Interviews._02._Arrays._19._RotateArray
         {
             var squareMatrix = new List<List<int>>
             {
-                new List<int> { 1, 2, 3, 4},
-                new List<int> { 5, 6, 7, 8},
-                new List<int> { 9,10,11,12},                
-                new List<int> {13,14,15,16}
+                new() { 1, 2, 3, 4},
+                new() { 5, 6, 7, 8},
+                new() { 9,10,11,12},                
+                new() {13,14,15,16}
             };
 
             Solution.RotateMatrix(squareMatrix);
 
             var expectedSquareMatrix = new List<List<int>>
             {
-                new List<int> {13, 9, 5, 1},
-                new List<int> {14,10, 6, 2},
-                new List<int> {15,11, 7, 3},                
-                new List<int> {16,12, 8, 4}
+                new() {13, 9, 5, 1},
+                new() {14,10, 6, 2},
+                new() {15,11, 7, 3},                
+                new() {16,12, 8, 4}
             };
 
             squareMatrix.Should().BeEquivalentTo(expectedSquareMatrix, options => options.WithoutStrictOrdering());
@@ -35,10 +35,10 @@ namespace Elements_of_Programming_Interviews._02._Arrays._19._RotateArray
         {
             var squareMatrix = new List<List<int>>
             {
-                new List<int> { 1, 2, 3, 4},
-                new List<int> { 5, 6, 7, 8},
-                new List<int> { 9,10,11,12},                
-                new List<int> {13,14,15,16}
+                new() { 1, 2, 3, 4},
+                new() { 5, 6, 7, 8},
+                new() { 9,10,11,12},                
+                new() {13,14,15,16}
             };
 
             var rotatedMatrix = new Solution.RotatedMatrix(squareMatrix);

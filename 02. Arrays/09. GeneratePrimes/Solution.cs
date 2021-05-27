@@ -11,18 +11,18 @@ namespace Elements_of_Programming_Interviews._02._Arrays._09._GeneratePrimes
             var primes = new List<int>();
             
             // isPrime[p] represents if p is prime or not. Initially , set each
-            // to true, excepting 0 and 1. Then use sieving to eliminate nonprimes.
-            List<bool> isPrime = Enumerable.Repeat(true, n+1).ToList();
+            // to true, excepting 0 and 1. Then use sieving to eliminate non primes.
+            var isPrime = Enumerable.Repeat(true, n+1).ToList();
             isPrime[0] = false;
             isPrime[1] = false;
 
-            for(int p = 0; p <= n; p++)
+            for(var p = 0; p <= n; p++)
             {
                 if(isPrime[p])
                 {
                     primes.Add(p);
                     // Sieve p’s multiples.
-                    for(int j = p; j<=n; j += p)
+                    for(var j = p; j<=n; j += p)
                     {
                         isPrime[j] = false;
                     }
@@ -34,19 +34,18 @@ namespace Elements_of_Programming_Interviews._02._Arrays._09._GeneratePrimes
 
         public static List<int> GeneratePrimesOptimization(int n)
         {
-            int size = (int)Math.Floor(0.5 * (n-3)) + 1;
-            var primes = new List<int>();
-            primes.Add(2);
+            var size = (int)Math.Floor(0.5 * (n-3)) + 1;
+            var primes = new List<int> {2};
 
             // isPrime[i] represents whether (2i + 3) is prime or not.
-            // Initially, set each to true. Then use sieving to eliminate nonprimes.
-            List<bool> isPrime = Enumerable.Repeat(true, size).ToList();
+            // Initially, set each to true. Then use sieving to eliminate non primes.
+            var isPrime = Enumerable.Repeat(true, size).ToList();
 
-            for(int i = 0; i < size; i++)
+            for(var i = 0; i < size; i++)
             {
                 if(isPrime[i])
                 {
-                    int p = ((i*2)+3);
+                    var p = (i * 2) + 3;
                     primes.Add(p);
 
                     // Sieving from p^2, whose value is (4i^2 + 12i + 9). The index of this

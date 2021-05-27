@@ -7,10 +7,10 @@ namespace Elements_of_Programming_Interviews._02._Arrays._06._BuyAndSellStockOnc
     {
         public static double ComputeMaxProfit(List<double> prices)
         {
-            double minPrice = double.MaxValue;
-            double maxProfit = 0.0;
+            var minPrice = double.MaxValue;
+            var maxProfit = 0.0;
 
-            foreach(double price in prices)
+            foreach(var price in prices)
             {
                 maxProfit = Math.Max(maxProfit, price - minPrice);
                 minPrice = Math.Min(minPrice, price);

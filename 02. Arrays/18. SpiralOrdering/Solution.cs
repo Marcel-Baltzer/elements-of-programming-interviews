@@ -9,7 +9,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._18._SpiralOrdering
         {
             var spiralOrdering = new List<int>();
 
-            for(int offset = 0; offset < Math.Ceiling(0.5 * squareMatrix.Count); offset++)
+            for(var offset = 0; offset < Math.Ceiling(0.5 * squareMatrix.Count); offset++)
             {
                 MatrixLayerInClockwise(squareMatrix, offset, spiralOrdering);
             }
@@ -26,22 +26,22 @@ namespace Elements_of_Programming_Interviews._02._Arrays._18._SpiralOrdering
                 return;
             }
 
-            for(int column = offset; column < squareMatrix.Count - offset -1; column++)
+            for(var column = offset; column < squareMatrix.Count - offset -1; column++)
             {
                 spiralOrdering.Add(squareMatrix[offset][column]);
             }
 
-            for(int row = offset; row < squareMatrix.Count - offset -1; row++)
+            for(var row = offset; row < squareMatrix.Count - offset -1; row++)
             {
                 spiralOrdering.Add(squareMatrix[row][squareMatrix.Count - offset -1]);
             }
 
-            for(int column = squareMatrix.Count - offset -1; column > offset; column--)
+            for(var column = squareMatrix.Count - offset -1; column > offset; column--)
             {
                 spiralOrdering.Add(squareMatrix[squareMatrix.Count - offset -1][column]);
             }
 
-            for(int row = squareMatrix.Count - offset -1; row > offset; row--)
+            for(var row = squareMatrix.Count - offset -1; row > offset; row--)
             {
                 spiralOrdering.Add(squareMatrix[row][offset]);
             }
@@ -51,25 +51,25 @@ namespace Elements_of_Programming_Interviews._02._Arrays._18._SpiralOrdering
         {
             var spiralOrdering = new List<int>();
 
-            var shift = new int[][] 
+            var shift = new[]
             {
-                new int[] { 0, 1},
-                new int[] { 1, 0},
-                new int[] { 0,-1},
-                new int[] {-1, 0}                
+                new[] { 0, 1},
+                new[] { 1, 0},
+                new[] { 0,-1},
+                new[] {-1, 0}                
             };
 
-            int dir = 0;
-            int row = 0;
-            int column = 0;
+            var dir = 0;
+            var row = 0;
+            var column = 0;
 
-            for(int i = 0; i < squareMatrix.Count * squareMatrix.Count; i++)
+            for(var i = 0; i < squareMatrix.Count * squareMatrix.Count; i++)
             {
                 spiralOrdering.Add(squareMatrix[row][column]);
                 squareMatrix[row][column] = 0;
 
-                int nextRow = row + shift[dir][0];
-                int nextColumn = column + shift[dir][1];
+                var nextRow = row + shift[dir][0];
+                var nextColumn = column + shift[dir][1];
 
                 if(nextRow < 0 || nextRow >= squareMatrix.Count ||
                    nextColumn < 0 || nextColumn >= squareMatrix.Count ||

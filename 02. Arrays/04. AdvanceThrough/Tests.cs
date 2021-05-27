@@ -11,9 +11,9 @@ namespace Elements_of_Programming_Interviews._02._Arrays._04._AdvanceThrough
         {
             var steps = new List<int>() {3,3,1,0,2,0,1};
 
-            var restult = Solution.CanReachEnd(steps);
+            var result = Solution.CanReachEnd(steps);
 
-            restult.Should().BeTrue();
+            result.Should().BeTrue();
         }
 
         [Fact]
@@ -21,9 +21,9 @@ namespace Elements_of_Programming_Interviews._02._Arrays._04._AdvanceThrough
         {
             var steps = new List<int>() {3,2,0,0,2,0,1};
 
-            var restult = Solution.CanReachEnd(steps);
+            var result = Solution.CanReachEnd(steps);
 
-            restult.Should().BeFalse();
+            result.Should().BeFalse();
         }
     }
 }

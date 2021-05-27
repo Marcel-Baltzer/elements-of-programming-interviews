@@ -18,7 +18,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._03._ArbitraryPrecision
         }
 
         [Fact]
-        public void MultiplyWithNegativNumber()
+        public void MultiplyWithNegativeNumber()
         {
             	var numberOne = new List<int> {1,5};
                 var numberTwo = new List<int> {-1};

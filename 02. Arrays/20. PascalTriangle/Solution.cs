@@ -6,12 +6,12 @@ namespace Elements_of_Programming_Interviews._02._Arrays._20._PascalTriangle
     {
         public static List<List<int>> GeneratePascalTriangle(int numRows)
         {
-            List<List<int>> pascalTriangle = new List<List<int>>();
+            var pascalTriangle = new List<List<int>>();
 
-            for(int i = 0; i < numRows; i++)
+            for(var i = 0; i < numRows; i++)
             {
-                List<int> currRow = new List<int>();
-                for(int j = 0; j <= i; j++)
+                var currRow = new List<int>();
+                for(var j = 0; j <= i; j++)
                 {
                     // Set this entry to the sum of the two above adjacent entries 
                     // if they adjacent entries if they exist.

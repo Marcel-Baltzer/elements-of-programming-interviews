@@ -9,7 +9,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._17._SudokuChecker
         [Fact]
         public void IsValidSudoku()
         {
-            var sodoku = new List<List<int>>
+            var sudoku = new List<List<int>>
             {
                 new List<int> {5,3,4, 6,7,8, 9,1,2},
                 new List<int> {6,7,2, 1,9,5, 3,4,8},
@@ -24,7 +24,7 @@ namespace Elements_of_Programming_Interviews._02._Arrays._17._SudokuChecker
                 new List<int> {3,4,5, 2,8,6, 1,7,9}
             };
 
-            var result = Solution.IsValidSudoku(sodoku);
+            var result = Solution.IsValidSudoku(sudoku);
 
             result.Should().BeTrue();
         }
