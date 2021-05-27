@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.LinkedLists.EvenOddMerge
+namespace Elements_of_Programming_Interviews._04._LinkedLists._10._EvenOddMerge
 {
     public class Tests
     {

@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.LinkedLists.OverlappingListsCycleFree
+namespace Elements_of_Programming_Interviews._04._LinkedLists._04._OverlappingListsCycleFree
 {
     public class Solution
     {

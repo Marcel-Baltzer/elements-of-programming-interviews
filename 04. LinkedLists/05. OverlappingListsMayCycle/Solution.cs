@@ -1,20 +1,19 @@
 using System;
-using System.Security.Principal;
-using System.Security.Cryptography;
-namespace Elements_of_Programming_Interviews.LinkedLists.OverlappingListsMayCycle
+
+namespace Elements_of_Programming_Interviews._04._LinkedLists._05._OverlappingListsMayCycle
 {
     public class Solution
     {
         public static ListNode<int> OverlappingLists(ListNode<int> list1, ListNode<int> list2)
         {
             // Store the start of cycle of any.
-            ListNode<int> root1 = Cyclicity.Solution.HasCycle(list1);
-            ListNode<int> root2 = Cyclicity.Solution.HasCycle(list2);
+            ListNode<int> root1 = _03._Cyclicity.Solution.HasCycle(list1);
+            ListNode<int> root2 = _03._Cyclicity.Solution.HasCycle(list2);
 
             if (root1 == null && root2 == null)
             {
                 // Both lists don't have cycles.
-                return OverlappingListsCycleFree.Solution.OverlappingNoCylceLists(list1, list2);
+                return _04._OverlappingListsCycleFree.Solution.OverlappingNoCylceLists(list1, list2);
             }
             else if ((root1 != null && root2 == null) || (root1 == null && root2 != null))
             {

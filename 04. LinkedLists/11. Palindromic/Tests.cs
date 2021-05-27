@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.LinkedLists.Palindromic
+namespace Elements_of_Programming_Interviews._04._LinkedLists._11._Palindromic
 {
     public class Tests
     {

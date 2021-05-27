@@ -1,4 +1,4 @@
-﻿using Elements_of_Programming_Interviews.LinkedLists;
+﻿using Elements_of_Programming_Interviews._04._LinkedLists;
 
 namespace Elements_of_Programming_Interviews._10._Sorting._10._FastSortingAlgorithm
 {
@@ -62,7 +62,7 @@ namespace Elements_of_Programming_Interviews._10._Sorting._10._FastSortingAlgori
             // Splits the list into two equal-sized lists.
             preSlow.Next = null;
 
-            return LinkedLists.MergeSortedLists.Solution.MergeTwoSortedLists(StableSortList(list), StableSortList(slow));
+            return Elements_of_Programming_Interviews._04._LinkedLists._01._MergeSortedLists.Solution.MergeTwoSortedLists(StableSortList(list), StableSortList(slow));
         }
     }
 }

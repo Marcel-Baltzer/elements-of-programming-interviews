@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.LinkedLists.ReverseSublist
+namespace Elements_of_Programming_Interviews._04._LinkedLists._02._ReverseSublist
 {
     public class Tests
     {

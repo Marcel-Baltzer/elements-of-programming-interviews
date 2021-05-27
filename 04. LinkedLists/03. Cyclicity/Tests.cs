@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.LinkedLists.Cyclicity
+namespace Elements_of_Programming_Interviews._04._LinkedLists._03._Cyclicity
 {
     public class Tests
     {

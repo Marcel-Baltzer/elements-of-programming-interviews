@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.LinkedLists.DeleteNode
+namespace Elements_of_Programming_Interviews._04._LinkedLists._06._DeleteNode
 {
     public class Tests
     {

@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.LinkedLists.MergeSortedLists
+namespace Elements_of_Programming_Interviews._04._LinkedLists._01._MergeSortedLists
 {
     public class Solution
     {

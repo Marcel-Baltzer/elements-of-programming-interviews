@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Elements_of_Programming_Interviews.LinkedLists;
+using Elements_of_Programming_Interviews._04._LinkedLists;
 
 namespace Elements_of_Programming_Interviews.StacksAndQueues.BootCamp.Stack
 {

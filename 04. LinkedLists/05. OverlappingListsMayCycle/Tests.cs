@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.LinkedLists.OverlappingListsMayCycle
+namespace Elements_of_Programming_Interviews._04._LinkedLists._05._OverlappingListsMayCycle
 {
     public class Tests
     {

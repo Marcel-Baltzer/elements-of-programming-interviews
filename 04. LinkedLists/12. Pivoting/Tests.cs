@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.LinkedLists.Pivoting
+namespace Elements_of_Programming_Interviews._04._LinkedLists._12._Pivoting
 {
     public class Tests
     {

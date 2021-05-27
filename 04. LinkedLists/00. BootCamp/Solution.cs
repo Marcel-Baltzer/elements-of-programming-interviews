@@ -1,6 +1,4 @@
-using System.IO.Pipes;
-using System.Collections.Generic;
-namespace Elements_of_Programming_Interviews.LinkedLists.BootCamp
+namespace Elements_of_Programming_Interviews._04._LinkedLists._00._BootCamp
 {
     public class Solution
     {

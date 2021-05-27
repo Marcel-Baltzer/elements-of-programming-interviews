@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Elements_of_Programming_Interviews.LinkedLists.ListBasedIntegers
+namespace Elements_of_Programming_Interviews._04._LinkedLists._13._ListBasedIntegers
 {
     public class Tests
     {

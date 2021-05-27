@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews.LinkedLists
+namespace Elements_of_Programming_Interviews._04._LinkedLists
 {
     public class ListNode<T>
     {
