@@ -4,8 +4,8 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._03._Cyclicity
     {
         public static ListNode<int> HasCycle(ListNode<int> head)
         {
-            ListNode<int> fast = head;
-            ListNode<int> slow = head;
+            var fast = head;
+            var slow = head;
 
             while (fast != null && fast.Next != null)
             {
@@ -15,7 +15,7 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._03._Cyclicity
                 if (slow == fast)
                 {
                     // There is a cycle, so now let’s calculate the cycle length.
-                    int cycleLen = 0;
+                    var cycleLen = 0;
                     do
                     {
                         ++cycleLen;
@@ -23,24 +23,23 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._03._Cyclicity
                     } while (slow != fast);
 
                     // Finds the start of the cycle.
-                    ListNode<int> cycleLenAdvancedlter = head;
-                    // cycleLenAdvancedlter pointer advances cycleLen first.
+                    var cycleLenAdvancedIter = head;
+                    // cycleLenAdvancedIter pointer advances cycleLen first.
                     while (cycleLen-- > 0)
                     {
-                        cycleLenAdvancedlter = cycleLenAdvancedlter.Next;
+                        cycleLenAdvancedIter = cycleLenAdvancedIter.Next;
                     }
 
-                    ListNode<int> iter = head;
+                    var iter = head;
                     // Both iterators advance in tandem.
-                    while (iter != cycleLenAdvancedlter)
+                    while (iter != cycleLenAdvancedIter)
                     {
                         iter = iter.Next;
-                        cycleLenAdvancedlter = cycleLenAdvancedlter.Next;
+                        cycleLenAdvancedIter = cycleLenAdvancedIter.Next;
                     }
                     return iter; // iter is the start of cycle.
                 }
             }
-
             return null; // no cycle.
         }
     }

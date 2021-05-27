@@ -2,15 +2,15 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._00._BootCamp
 {
     public class Solution
     {
-        public static ListNode<int> Search(ListNode<int> L, int key)
+        public static ListNode<int> Search(ListNode<int> list, int key)
         {
-            while (L != null && L.Data != key)
+            while (list != null && list.Data != key)
             {
-                L = L.Next;
+                list = list.Next;
             }
 
             // If key was not present in the list, L will have become null.
-            return L;
+            return list;
         }
 
         public static void InsertAfter(ListNode<int> node, ListNode<int> newNode)

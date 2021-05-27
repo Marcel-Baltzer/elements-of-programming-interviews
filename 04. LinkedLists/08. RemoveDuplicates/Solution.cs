@@ -4,12 +4,12 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._08._RemoveDuplica
     {
         public static ListNode<int> RemoveDuplicates(ListNode<int> list)
         {
-            ListNode<int> iter = list;
+            var iter = list;
 
             while (iter != null)
             {
                 // Uses nextDistinct to find the next distinct value.
-                ListNode<int> nextDistinct = iter.Next;
+                var nextDistinct = iter.Next;
                 while (nextDistinct != null && nextDistinct.Data == iter.Data)
                 {
                     nextDistinct = nextDistinct.Next;

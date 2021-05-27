@@ -10,9 +10,9 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._02._ReverseSublis
                 return list;
             }
 
-            ListNode<int> dummyHead = new ListNode<int>() { Data = 0, Next = list };
-            ListNode<int> sublistHead = dummyHead;
-            int k = 1;
+            var dummyHead = new ListNode<int>() { Data = 0, Next = list };
+            var sublistHead = dummyHead;
+            var k = 1;
 
             while (k++ < start)
             {
@@ -20,10 +20,10 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._02._ReverseSublis
             }
 
             //Reverse subList.
-            ListNode<int> sublistIter = sublistHead.Next;
+            var sublistIter = sublistHead.Next;
             while (start++ < finish)
             {
-                ListNode<int> temp = sublistIter.Next;
+                var temp = sublistIter.Next;
                 sublistIter.Next = temp.Next;
                 temp.Next = sublistHead.Next;
                 sublistHead.Next = temp;

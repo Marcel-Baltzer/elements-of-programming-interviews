@@ -4,14 +4,14 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._13._ListBasedInte
     {
         public static ListNode<int> AddTwoNumbers(ListNode<int> list1, ListNode<int> list2)
         {
-            ListNode<int> dummyHead = new ListNode<int>();
-            ListNode<int> placeIter = dummyHead;
+            var dummyHead = new ListNode<int>();
+            var placeIter = dummyHead;
 
-            int carry = 0;
+            var carry = 0;
 
             while (list1 != null || list2 != null)
             {
-                int sum = carry;
+                var sum = carry;
 
                 if (list1 != null)
                 {

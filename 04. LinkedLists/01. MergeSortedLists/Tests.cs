@@ -8,7 +8,7 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._01._MergeSortedLi
         [Fact]
         public void MergeTwoSortedLists()
         {
-            var ListOne = new ListNode<int>()
+            var listOne = new ListNode<int>()
             {
                 Data = 1,
                 Next = new ListNode<int>()
@@ -22,7 +22,7 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._01._MergeSortedLi
                 }
             };
 
-            var ListTwo = new ListNode<int>()
+            var listTwo = new ListNode<int>()
             {
                 Data = 2,
                 Next = new ListNode<int>()
@@ -32,7 +32,7 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._01._MergeSortedLi
                 }
             };
 
-            var result = Solution.MergeTwoSortedLists(ListOne, ListTwo);
+            var result = Solution.MergeTwoSortedLists(listOne, listTwo);
 
             var expectedResult = new ListNode<int>()
             {

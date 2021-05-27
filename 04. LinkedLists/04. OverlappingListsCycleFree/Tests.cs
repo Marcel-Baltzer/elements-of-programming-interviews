@@ -6,7 +6,7 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._04._OverlappingLi
     public class Tests
     {
         [Fact]
-        public void OverlappingNoCylceListsReturnsNull()
+        public void OverlappingNoCycleListsReturnsNull()
         {
             var fifthOne = new ListNode<int> { Data = 5, Next = null };
             var fourthOne = new ListNode<int> { Data = 4, Next = fifthOne };
@@ -18,13 +18,13 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._04._OverlappingLi
             var secondTwo = new ListNode<int> { Data = 2, Next = thirdTwo };
             var firstTwo = new ListNode<int> { Data = 1, Next = secondTwo };
 
-            var result = Solution.OverlappingNoCylceLists(firstOne, firstTwo);
+            var result = Solution.OverlappingNoCycleLists(firstOne, firstTwo);
 
             result.Should().BeNull();
         }
 
         [Fact]
-        public void OverlappingNoCylceLists()
+        public void OverlappingNoCycleLists()
         {
             var secondCommon = new ListNode<int> { Data = 7, Next = null };
             var firstCommon = new ListNode<int> { Data = 6, Next = secondCommon };
@@ -39,7 +39,7 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._04._OverlappingLi
             var secondTwo = new ListNode<int> { Data = 2, Next = thirdTwo };
             var firstTwo = new ListNode<int> { Data = 1, Next = secondTwo };
 
-            var result = Solution.OverlappingNoCylceLists(firstOne, firstTwo);
+            var result = Solution.OverlappingNoCycleLists(firstOne, firstTwo);
 
             result.Data.Should().Be(6);
         }

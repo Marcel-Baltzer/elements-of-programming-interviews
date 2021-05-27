@@ -8,17 +8,17 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._10._EvenOddMerge
         {
             if (list == null)
             {
-                return list;
+                return null;
             }
 
-            ListNode<int> evenDummyHead = new ListNode<int>();
-            ListNode<int> oddDummyHead = new ListNode<int>();
+            var evenDummyHead = new ListNode<int>();
+            var oddDummyHead = new ListNode<int>();
 
-            List<ListNode<int>> tails = new List<ListNode<int>>() { evenDummyHead, oddDummyHead };
+            var tails = new List<ListNode<int>> { evenDummyHead, oddDummyHead };
 
-            int turn = 0;
+            var turn = 0;
 
-            for (ListNode<int> iter = list; iter != null; iter = iter.Next)
+            for (var iter = list; iter != null; iter = iter.Next)
             {
                 tails[turn].Next = iter;
                 tails[turn] = tails[turn].Next;

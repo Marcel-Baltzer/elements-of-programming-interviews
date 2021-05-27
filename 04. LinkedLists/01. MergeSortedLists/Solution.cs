@@ -5,10 +5,10 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._01._MergeSortedLi
         public static ListNode<int> MergeTwoSortedLists(ListNode<int> listNodeOne, ListNode<int> listNodeTwo)
         {
             // Creates a placeholder for the result.
-            ListNode<int> dummyHead = new ListNode<int>();
-            ListNode<int> current = dummyHead;
-            ListNode<int> p1 = listNodeOne;
-            ListNode<int> p2 = listNodeTwo;
+            var dummyHead = new ListNode<int>();
+            var current = dummyHead;
+            var p1 = listNodeOne;
+            var p2 = listNodeTwo;
 
             while (p1 != null && p2 != null)
             {
@@ -27,7 +27,7 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._01._MergeSortedLi
             }
 
             // Appends the remaining nodes of pi or p2.
-            current.Next = p1 != null ? p1 : p2;
+            current.Next = p1 ?? p2;
             return dummyHead.Next;
         }
     }

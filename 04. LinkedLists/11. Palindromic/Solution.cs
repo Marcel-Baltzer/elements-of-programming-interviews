@@ -10,8 +10,8 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._11._Palindromic
             }
 
             // Find the second half oh list.
-            ListNode<int> slow = list;
-            ListNode<int> fast = list;
+            var slow = list;
+            var fast = list;
 
             while (fast != null && fast.Next != null)
             {
@@ -20,8 +20,8 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._11._Palindromic
             }
 
             // Compare the first half and the reversed second half lists.
-            ListNode<int> firstHalfIter = list;
-            ListNode<int> secondHalfIter = ReverseList(slow);
+            var firstHalfIter = list;
+            var secondHalfIter = ReverseList(slow);
 
             while (secondHalfIter != null && firstHalfIter != null)
             {
@@ -39,13 +39,13 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._11._Palindromic
 
         public static ListNode<int> ReverseList(ListNode<int> list)
         {
-            ListNode<int> dummyHead = new ListNode<int>() { Data = 0, Next = list };
+            var dummyHead = new ListNode<int>() { Data = 0, Next = list };
 
-            ListNode<int> listIter = dummyHead.Next;
+            var listIter = dummyHead.Next;
 
             while (listIter.Next != null)
             {
-                ListNode<int> temp = listIter.Next;
+                var temp = listIter.Next;
                 listIter.Next = temp.Next;
                 temp.Next = dummyHead.Next;
                 dummyHead.Next = temp;

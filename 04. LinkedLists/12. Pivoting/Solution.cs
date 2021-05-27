@@ -4,15 +4,15 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._12._Pivoting
     {
         public static ListNode<int> ListPivoting(ListNode<int> list, int k)
         {
-            ListNode<int> lessHead = new ListNode<int>();
-            ListNode<int> equalHead = new ListNode<int>();
-            ListNode<int> greaterHead = new ListNode<int>();
-            ListNode<int> lessIter = lessHead;
-            ListNode<int> equalIter = equalHead;
-            ListNode<int> greaterITer = greaterHead;
+            var lessHead = new ListNode<int>();
+            var equalHead = new ListNode<int>();
+            var greaterHead = new ListNode<int>();
+            var lessIter = lessHead;
+            var equalIter = equalHead;
+            var greaterITer = greaterHead;
 
             // Populate the three lists.
-            ListNode<int> iter = list;
+            var iter = list;
 
             while (iter != null)
             {

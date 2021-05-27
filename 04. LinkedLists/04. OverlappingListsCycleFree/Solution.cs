@@ -2,10 +2,10 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._04._OverlappingLi
 {
     public class Solution
     {
-        public static ListNode<int> OverlappingNoCylceLists(ListNode<int> list1, ListNode<int> list2)
+        public static ListNode<int> OverlappingNoCycleLists(ListNode<int> list1, ListNode<int> list2)
         {
-            int list1Length = Length(list1);
-            int list2Length = Length(list2);
+            var list1Length = Length(list1);
+            var list2Length = Length(list2);
 
             // Advances the longer list to get equal length lists.
             if (list1Length > list2Length)
@@ -37,7 +37,7 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._04._OverlappingLi
 
         private static int Length(ListNode<int> list)
         {
-            int len = 0;
+            var len = 0;
             while (list != null)
             {
                 ++len;

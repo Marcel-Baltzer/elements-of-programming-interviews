@@ -6,12 +6,12 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._09._CyclicRightSh
         {
             if (list == null)
             {
-                return list;
+                return null;
             }
 
             // Compute the length of L and the tail.
-            ListNode<int> tail = list;
-            int n = 1;
+            var tail = list;
+            var n = 1;
             while (tail.Next != null)
             {
                 n++;
@@ -28,18 +28,17 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._09._CyclicRightSh
             // Makes a cycle by connecting the tail to the head.
             tail.Next = list;
 
-            int stepsToNewHEad = n - k;
-            ListNode<int> newTail = tail;
+            var stepsToNewHEad = n - k;
+            var newTail = tail;
             while (stepsToNewHEad-- > 0)
             {
                 newTail = newTail.Next;
             }
 
-            ListNode<int> newHead = newTail.Next;
+            var newHead = newTail.Next;
             newTail.Next = null;
 
             return newHead;
-
         }
     }
 }

@@ -1,5 +1,3 @@
-using System;
-
 namespace Elements_of_Programming_Interviews._04._LinkedLists._05._OverlappingListsMayCycle
 {
     public class Solution
@@ -7,22 +5,23 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._05._OverlappingLi
         public static ListNode<int> OverlappingLists(ListNode<int> list1, ListNode<int> list2)
         {
             // Store the start of cycle of any.
-            ListNode<int> root1 = _03._Cyclicity.Solution.HasCycle(list1);
-            ListNode<int> root2 = _03._Cyclicity.Solution.HasCycle(list2);
+            var root1 = _03._Cyclicity.Solution.HasCycle(list1);
+            var root2 = _03._Cyclicity.Solution.HasCycle(list2);
 
             if (root1 == null && root2 == null)
             {
                 // Both lists don't have cycles.
-                return _04._OverlappingListsCycleFree.Solution.OverlappingNoCylceLists(list1, list2);
+                return _04._OverlappingListsCycleFree.Solution.OverlappingNoCycleLists(list1, list2);
             }
-            else if ((root1 != null && root2 == null) || (root1 == null && root2 != null))
+            else if ((root1 != null && root2 == null) 
+                     || (root1 == null)) // root2 != null is always true
             {
                 // One list has cycle, and one list has no cycle.
                 return null;
             }
 
             // Both lists have cycles.
-            ListNode<int> temp = root2;
+            var temp = root2;
 
             do
             {
@@ -32,14 +31,13 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._05._OverlappingLi
             // L1 and L2 do nit end in the same cycle.
             if (temp != root1)
             {
-                return null; // Cylces are disjoint.
+                return null; // Cycles are disjoint.
             }
 
-            // L1 and L2 end in the same cyle, locate the overlapping node if they
+            // L1 and L2 end in the same cycle, locate the overlapping node if they
             // first overlap before cycle starts.
-            int stem1Length = Distance(list1, root1);
-            int stem2Length = Distance(list2, root2);
-            int count = Math.Abs(stem1Length - stem2Length);
+            var stem1Length = Distance(list1, root1);
+            var stem2Length = Distance(list2, root2);
 
             if (stem1Length > stem2Length)
             {
@@ -60,14 +58,12 @@ namespace Elements_of_Programming_Interviews._04._LinkedLists._05._OverlappingLi
             // before the cycle starts; otherwise, the first overlapping node is not
             // unique, so we can return any node on the cycle.
             return list1 == list2 ? list1 : root1;
-
-
         }
 
         // Calculate the distance between a and b.
         private static int Distance(ListNode<int> a, ListNode<int> b)
         {
-            int distance = 0;
+            var distance = 0;
 
             while (a != b)
             {
