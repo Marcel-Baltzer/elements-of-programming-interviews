@@ -9,7 +9,7 @@ namespace Elements_of_Programming_Interviews._08._Searching._10._DuplicateAndMis
         [Fact]
         public void FindDuplicateMissing()
         {
-            var array = new List<int>() { 5, 3, 0, 3, 1, 2 };
+            var array = new List<int> { 5, 3, 0, 3, 1, 2 };
 
             var result = Solution.FindDuplicateMissing(array);
 

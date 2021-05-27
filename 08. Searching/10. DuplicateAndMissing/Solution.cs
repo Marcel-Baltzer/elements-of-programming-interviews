@@ -6,23 +6,23 @@ namespace Elements_of_Programming_Interviews._08._Searching._10._DuplicateAndMis
     {
         public class DuplicateAndMissing
         {
-            public int Duplicate;
-            public int Missing;
+            public readonly int Duplicate;
+            public readonly int Missing;
 
             public DuplicateAndMissing(int duplicate, int missing)
             {
-                this.Duplicate = duplicate;
-                this.Missing = missing;
+                Duplicate = duplicate;
+                Missing = missing;
             }
         }
 
-        public static DuplicateAndMissing FindDuplicateMissing(List<int> A)
+        public static DuplicateAndMissing FindDuplicateMissing(List<int> array)
         {
             // Compute the XOR of all numbers from 0 to |A| - 1 and all entries in A.
-            int missXORDup = 0;
-            for (int i = 0; i < A.Count; ++i)
+            var missXorDup = 0;
+            for (var i = 0; i < array.Count; ++i)
             {
-                missXORDup ^= i ^ A[i];
+                missXorDup ^= i ^ array[i];
             }
 
             // We need to find a bit that’s set to 1 in missXORDup. Such a bit
@@ -31,10 +31,10 @@ namespace Elements_of_Programming_Interviews._08._Searching._10._DuplicateAndMis
             //
             // The bit-fiddling assignment below sets all of bits in differBit to 0
             // except for the least significant bit in missXORDup that’s 1.
-            int differBit = missXORDup & (~(missXORDup - 1));
-            int missOrDup = 0;
+            var differBit = missXorDup & (~(missXorDup - 1));
+            var missOrDup = 0;
 
-            for (int i = 0; i < A.Count; ++i)
+            for (var i = 0; i < array.Count; ++i)
             {
                 // Focus on entries and numbers in which the differBit-th bit is 1.
                 if ((i & differBit) != 0)
@@ -42,26 +42,23 @@ namespace Elements_of_Programming_Interviews._08._Searching._10._DuplicateAndMis
                     missOrDup ^= i;
                 }
 
-                if ((A[i] & differBit) != 0)
+                if ((array[i] & differBit) != 0)
                 {
-                    missOrDup ^= A[i];
+                    missOrDup ^= array[i];
                 }
             }
 
             // missOrDup is either the missing value or the duplicated entry.
-            foreach (int a in A)
+            foreach (var a in array)
             {
                 if (a == missOrDup) // missOrDup is the duplicate.
                 {
-                    return new DuplicateAndMissing(missOrDup, missOrDup ^ missXORDup);
+                    return new DuplicateAndMissing(missOrDup, missOrDup ^ missXorDup);
                 }
             }
 
             // missOrDup is the missing value.
-            return new DuplicateAndMissing(missOrDup ^ missXORDup, missOrDup);
-
+            return new DuplicateAndMissing(missOrDup ^ missXorDup, missOrDup);
         }
-
-
     }
 }

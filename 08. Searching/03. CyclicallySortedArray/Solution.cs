@@ -4,15 +4,15 @@ namespace Elements_of_Programming_Interviews._08._Searching._03._CyclicallySorte
 {
     public class Solution
     {
-        public static int SearchSmallest(List<int> A)
+        public static int SearchSmallest(List<int> array)
         {
-            int left = 0;
-            int right = A.Count - 1;
+            var left = 0;
+            var right = array.Count - 1;
 
             while (left < right)
             {
-                int mid = left + ((right - left) / 2);
-                if (A[mid] > A[right])
+                var mid = left + (right - left) / 2;
+                if (array[mid] > array[right])
                 {
                     // Minimum must be in A.subList(mid + 1, right + 1).
                     left = mid + 1;

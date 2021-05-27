@@ -10,8 +10,8 @@ namespace Elements_of_Programming_Interviews._08._Searching._04._SquareRoot
             // square <= k, and everything after right has square > k.
             while (left <= right)
             {
-                long mid = left + ((right - left) / 2);
-                long midSquared = mid * mid;
+                var mid = left + ((right - left) / 2);
+                var midSquared = mid * mid;
 
                 if (midSquared <= k)
                 {

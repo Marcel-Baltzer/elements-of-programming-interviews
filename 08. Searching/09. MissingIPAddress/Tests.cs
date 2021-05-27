@@ -9,7 +9,7 @@ namespace Elements_of_Programming_Interviews._08._Searching._09._MissingIPAddres
         [Fact]
         public void FindMissingElement()
         {
-            var enumerable = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15 };
+            var enumerable = new List<int> { 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15 };
 
             var result = Solution.FindMissingElement(enumerable.GetEnumerator());
 

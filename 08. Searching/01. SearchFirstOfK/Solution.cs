@@ -4,22 +4,22 @@ namespace Elements_of_Programming_Interviews._08._Searching._01._SearchFirstOfK
 {
     public class Solution
     {
-        public static int SearchFirstOfK(List<int> A, int k)
+        public static int SearchFirstOfK(List<int> array, int k)
         {
-            int left = 0;
-            int right = A.Count - 1;
-            int result = -1;
+            var left = 0;
+            var right = array.Count - 1;
+            var result = -1;
 
             // A.subList(left , right + 1) is the candidate set
             while (left <= right)
             {
-                int mid = left + ((right - left) / 2);
+                var mid = left + ((right - left) / 2);
 
-                if (A[mid] > k)
+                if (array[mid] > k)
                 {
                     right = mid - 1;
                 }
-                else if (A[mid] == k)
+                else if (array[mid] == k)
                 {
                     result = mid;
                     // Nothing to the right of mid can be the first occurrence of k.

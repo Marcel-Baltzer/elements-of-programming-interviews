@@ -19,15 +19,15 @@ namespace Elements_of_Programming_Interviews._08._Searching._05._RealSquareRoot
             }
 
             // Keeps searching as long as left < right , within tolerance.
-            while (Compare(left, right) == Ordering.SMALLER)
+            while (Compare(left, right) == Ordering.Smaller)
             {
-                double mid = left + 0.5 * (right - left);
-                double midSquared = mid * mid;
-                if (Compare(midSquared, x) == Ordering.EQUAL)
+                var mid = left + 0.5 * (right - left);
+                var midSquared = mid * mid;
+                if (Compare(midSquared, x) == Ordering.Equal)
                 {
                     return mid;
                 }
-                else if (Compare(midSquared, x) == Ordering.LARGER)
+                else if (Compare(midSquared, x) == Ordering.Larger)
                 {
                     right = mid;
                 }
@@ -39,16 +39,16 @@ namespace Elements_of_Programming_Interviews._08._Searching._05._RealSquareRoot
             return left;
         }
 
-        private enum Ordering { SMALLER, EQUAL, LARGER }
+        private enum Ordering { Smaller, Equal, Larger }
 
         private static Ordering Compare(double a, double b)
         {
-            const double EPSILON = 0.00001;
+            const double epsilon = 0.00001;
 
             // Uses normalization for precision problem.
-            double diff = (a - b) / b;
+            var diff = (a - b) / b;
 
-            return diff < -EPSILON ? Ordering.SMALLER : (diff > EPSILON ? Ordering.LARGER : Ordering.EQUAL);
+            return diff < -epsilon ? Ordering.Smaller : (diff > epsilon ? Ordering.Larger : Ordering.Equal);
         }
     }
 }

@@ -15,30 +15,30 @@ namespace Elements_of_Programming_Interviews._08._Searching._08._FindKthLargestE
                 }
             }
 
-            public static readonly GreaterThan GREATER_THAN = new GreaterThan();
+            public static readonly GreaterThan GREATER_THAN = new();
         }
 
         // The numbering starts from one, i.e., if A = [3,1,-1,2] then
         // findKthLargest(A, 1) returns 3, findKthLargest(A, 2) returns 2,
         // findKthLargest(A, 3) returns 1, and findKthLargest(A, 4) returns -1.
-        public static int FindKthLargest(List<int> A, int k)
+        public static int FindKthLargest(List<int> array, int k)
         {
-            return FindKth(A, k, Compare.GREATER_THAN);
+            return FindKth(array, k, Compare.GREATER_THAN);
         }
 
-        public static int FindKth(List<int> A, int k, Comparer<int> cmp)
+        private static int FindKth(IList<int> array, int k, IComparer<int> cmp)
         {
-            int left = 0, right = A.Count - 1;
-            Random r = new Random(0);
+            int left = 0, right = array.Count - 1;
+            var r = new Random(0);
 
             while (left <= right)
             {
                 // Generates a random integer in [left, right].
-                int pivotIdx = r.Next(right - left + 1) + left;
-                int newPivotIdx = PartitionArountPivot(left, right, pivotIdx, A, cmp);
+                var pivotIdx = r.Next(right - left + 1) + left;
+                var newPivotIdx = PartitionAroundPivot(left, right, pivotIdx, array, cmp);
                 if (newPivotIdx == k - 1)
                 {
-                    return A[newPivotIdx];
+                    return array[newPivotIdx];
                 }
                 else if (newPivotIdx > k - 1)
                 {
@@ -62,28 +62,28 @@ namespace Elements_of_Programming_Interviews._08._Searching._08._FindKthLargestE
         // Note: "less than" is defined by the Comparator object.
         //
         // Returns the new index of the pivot element after partition.
-        private static int PartitionArountPivot(int left, int right, int pivotIdx, List<int> A, Comparer<int> cmp)
+        private static int PartitionAroundPivot(int left, int right, int pivotIdx, IList<int> array, IComparer<int> cmp)
         {
-            int pivotValue = A[pivotIdx];
-            int newPivotIdx = left;
+            var pivotValue = array[pivotIdx];
+            var newPivotIdx = left;
 
-            Swap(A, pivotIdx, right);
+            Swap(array, pivotIdx, right);
 
-            for (int i = left; i < right; ++i)
+            for (var i = left; i < right; ++i)
             {
-                if (cmp.Compare(A[i], pivotValue) < 0)
+                if (cmp.Compare(array[i], pivotValue) < 0)
                 {
-                    Swap(A, i, newPivotIdx++);
+                    Swap(array, i, newPivotIdx++);
                 }
             }
 
-            Swap(A, right, newPivotIdx);
+            Swap(array, right, newPivotIdx);
             return newPivotIdx;
         }
 
-        static void Swap(IList<int> list, int indexA, int indexB)
+        private static void Swap(IList<int> list, int indexA, int indexB)
         {
-            int tmp = list[indexA];
+            var tmp = list[indexA];
             list[indexA] = list[indexB];
             list[indexB] = tmp;
         }

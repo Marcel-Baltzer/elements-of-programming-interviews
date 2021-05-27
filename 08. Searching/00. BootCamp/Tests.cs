@@ -11,11 +11,11 @@ namespace Elements_of_Programming_Interviews._08._Searching._00._BootCamp
         {
             var list = new List<Solution.Student>()
             {
-                new Solution.Student("student1", 1.2),
-                new Solution.Student("student2", 5.2),
-                new Solution.Student("student3", 5.2),
-                new Solution.Student("student4", 3.2),
-                new Solution.Student("student5", 2.8)
+                new("student1", 1.2),
+                new("student2", 5.2),
+                new("student3", 5.2),
+                new("student4", 3.2),
+                new("student5", 2.8)
             };
 
             var comparer = new Solution.CompGPA();

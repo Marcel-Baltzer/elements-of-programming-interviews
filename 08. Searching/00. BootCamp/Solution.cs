@@ -6,13 +6,13 @@ namespace Elements_of_Programming_Interviews._08._Searching._00._BootCamp
     {
         public class Student
         {
-            public string Name;
-            public double GradePointAverage;
+            public readonly string Name;
+            public readonly double GradePointAverage;
 
             public Student(string name, double gradePointAverage)
             {
-                this.Name = name;
-                this.GradePointAverage = gradePointAverage;
+                Name = name;
+                GradePointAverage = gradePointAverage;
             }
         }
 

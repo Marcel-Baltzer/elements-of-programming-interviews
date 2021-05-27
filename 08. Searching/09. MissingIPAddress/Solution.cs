@@ -5,37 +5,37 @@ namespace Elements_of_Programming_Interviews._08._Searching._09._MissingIPAddres
 {
     public class Solution
     {
-        private static readonly int NUM_BUCKET = 1 << 16;
+        private const int NumBucket = 1 << 16;
 
         public static int FindMissingElement(IEnumerator<int> sequence)
         {
-            int[] counter = new int[NUM_BUCKET];
+            var counter = new int[NumBucket];
 
             while (sequence.MoveNext())
             {
-                int idx = (int)((uint)sequence.Current >> 16);
+                var idx = (int)((uint)sequence.Current >> 16);
                 ++counter[idx];
             }
 
-            for (int i = 0; i < counter.Length; ++i)
+            for (var i = 0; i < counter.Length; ++i)
             {
                 // Look for a bucket that contains less than NUN_BUCKET elements.
-                if (counter[i] < NUM_BUCKET)
+                if (counter[i] < NumBucket)
                 {
-                    var bitVec = new BitArray(NUM_BUCKET);
+                    var bitVec = new BitArray(NumBucket);
                     // Search from the beginning again.
                     sequence.Reset();
                     while (sequence.MoveNext())
                     {
-                        int x = sequence.Current;
+                        var x = sequence.Current;
                         if (i == (int)((uint)x >> 16))
                         {
                             // Gets the lower 16 bits of x.
-                            bitVec.Set(((NUM_BUCKET) - 1) & x, true);
+                            bitVec.Set(((NumBucket) - 1) & x, true);
                         }
                     }
 
-                    for (int j = 0; j < (1 << 16); ++j)
+                    for (var j = 0; j < (1 << 16); ++j)
                     {
                         if (!bitVec.Get(j))
                         {
