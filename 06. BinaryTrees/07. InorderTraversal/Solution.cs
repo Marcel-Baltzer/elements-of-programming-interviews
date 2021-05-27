@@ -6,7 +6,7 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._07._InorderTraver
     {
         public static List<int> InSortedOrder(BinaryTreeNode<int> tree)
         {
-            Stack<BinaryTreeNode<int>> stack = new Stack<BinaryTreeNode<int>>();
+            var stack = new Stack<BinaryTreeNode<int>>();
             var curr = tree;
 
             var result = new List<int>();

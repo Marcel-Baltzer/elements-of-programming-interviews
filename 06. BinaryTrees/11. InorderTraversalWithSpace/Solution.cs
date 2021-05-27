@@ -7,8 +7,8 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._11._InorderTraver
         public static List<int> InorderTraversal(BinaryTreeNodeWithParent<int> tree)
         {
             BinaryTreeNodeWithParent<int> prev = null;
-            BinaryTreeNodeWithParent<int> curr = tree;
-            List<int> result = new List<int>();
+            var curr = tree;
+            var result = new List<int>();
 
             while (curr != null)
             {
@@ -26,14 +26,14 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._11._InorderTraver
                         result.Add(curr.Data);
                         // Done with left, so go right if right is not empty.
                         // Otherwise , go up.
-                        next = curr.Right != null ? curr.Right : curr.Parent;
+                        next = curr.Right ?? curr.Parent;
                     }
                 }
                 else if (curr.Left == prev)
                 {
                     result.Add(curr.Data);
                     // Done with left, so go right if right is not empty. Otherwise , go up.
-                    next = curr.Right != null ? curr.Right : curr.Parent;
+                    next = curr.Right ?? curr.Parent;
                 }
                 else // Done with both children , so move up.
                 {

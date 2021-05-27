@@ -4,27 +4,27 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._13._ReconstructPr
 {
     public class Solution
     {
-        private static int subtreeIdx;
+        private static int _subtreeIdx;
 
         public static BinaryTreeNode<int> ReconstructPreorder(List<int?> preorder)
         {
-            subtreeIdx = 0;
+            _subtreeIdx = 0;
             return ReconstructPreorderSubtree(preorder);
         }
 
         // Reconstructs the subtree that is rooted at subtreeIdx.
         private static BinaryTreeNode<int> ReconstructPreorderSubtree(List<int?> preorder)
         {
-            int? subtreeKey = preorder[subtreeIdx];
-            subtreeIdx++;
+            var subtreeKey = preorder[_subtreeIdx];
+            _subtreeIdx++;
 
             if (subtreeKey == null)
             {
                 return null;
             }
 
-            BinaryTreeNode<int> leftSubtree = ReconstructPreorderSubtree(preorder);
-            BinaryTreeNode<int> rightSubtree = ReconstructPreorderSubtree(preorder);
+            var leftSubtree = ReconstructPreorderSubtree(preorder);
+            var rightSubtree = ReconstructPreorderSubtree(preorder);
 
             return new BinaryTreeNode<int>() { Data = subtreeKey.Value, Left = leftSubtree, Right = rightSubtree };
         }

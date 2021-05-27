@@ -4,15 +4,15 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._09._KthNodeInorde
     {
         public static BinaryTreeNodeWithSize<int> FindKthNodeBinaryTree(BinaryTreeNodeWithSize<int> tree, int k)
         {
-            BinaryTreeNodeWithSize<int> iter = tree;
+            var iter = tree;
 
             while (iter != null)
             {
-                int leftSize = iter.Left != null ? iter.Left.Size : 0;
+                var leftSize = iter.Left?.Size ?? 0;
 
                 if (leftSize + 1 < k) // k-th node must be in right subtree of iter.
                 {
-                    k -= (leftSize + 1);
+                    k -= leftSize + 1;
                     iter = iter.Right;
                 }
                 else if (leftSize == k - 1) // k-th is iter itself.

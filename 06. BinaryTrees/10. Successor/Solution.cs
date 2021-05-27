@@ -4,7 +4,7 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._10._Successor
     {
         public static BinaryTreeNodeWithParent<int> FindSuccessor(BinaryTreeNodeWithParent<int> node)
         {
-            BinaryTreeNodeWithParent<int> iter = node;
+            var iter = node;
 
             if (iter.Right != null)
             {

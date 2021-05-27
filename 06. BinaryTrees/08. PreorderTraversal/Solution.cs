@@ -6,7 +6,7 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._08._PreorderTrave
     {
         public static List<int> PreorderTraversal(BinaryTreeNode<int> tree)
         {
-            Stack<BinaryTreeNode<int>> stack = new Stack<BinaryTreeNode<int>>();
+            var stack = new Stack<BinaryTreeNode<int>>();
             stack.Push(tree);
 
             var result = new List<int>();

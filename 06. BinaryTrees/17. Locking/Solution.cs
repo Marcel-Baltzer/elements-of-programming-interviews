@@ -19,7 +19,7 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._17._Locking
                 }
 
                 // We cannot lock if any of this node’s ancestors are locked.
-                for (BinaryTree iter = Parent; iter != null; iter = iter.Parent)
+                for (var iter = Parent; iter != null; iter = iter.Parent)
                 {
                     if (iter.locked)
                     {
@@ -30,7 +30,7 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._17._Locking
                 // Lock this node and increments all its ancestors’s descendant lock
                 // counts.
                 locked = true;
-                for (BinaryTree iter = Parent; iter != null; iter = iter.Parent)
+                for (var iter = Parent; iter != null; iter = iter.Parent)
                 {
                     iter.numLockedDescendants++;
                 }
@@ -45,7 +45,7 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._17._Locking
                     // Unlocks itself and decrements its ancestors ’s descendant lock counts.
                     locked = false;
 
-                    for (BinaryTree iter = Parent; iter != null; iter = iter.Parent)
+                    for (var iter = Parent; iter != null; iter = iter.Parent)
                     {
                         iter.numLockedDescendants--;
                     }

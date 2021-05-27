@@ -8,7 +8,7 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._12._ReconstructTr
         {
             var nodeToInorderIdx = new Dictionary<int, int>();
 
-            for (int i = 0; i < inorder.Count; i++)
+            for (var i = 0; i < inorder.Count; i++)
             {
                 nodeToInorderIdx.Add(inorder[i], i);
             }
@@ -25,8 +25,8 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._12._ReconstructTr
                 return null;
             }
 
-            int rootInorderIdx = nodeToInorderIdx[preorder[preorderStart]];
-            int leftSubtreeSize = rootInorderIdx - inorderStart;
+            var rootInorderIdx = nodeToInorderIdx[preorder[preorderStart]];
+            var leftSubtreeSize = rootInorderIdx - inorderStart;
 
             return new BinaryTreeNode<int>
             {

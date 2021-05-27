@@ -4,7 +4,7 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._16._RightSibling
     {
         public static void ConstructRightSibling(BinaryTreeNodeWithNext<int> tree)
         {
-            BinaryTreeNodeWithNext<int> leftStart = tree;
+            var leftStart = tree;
 
             while (leftStart != null && leftStart.Left != null)
             {
@@ -15,7 +15,7 @@ namespace Elements_of_Programming_Interviews._06._BinaryTrees._16._RightSibling
 
         private static void PopulateLowerLevelNextField(BinaryTreeNodeWithNext<int> startNode)
         {
-            BinaryTreeNodeWithNext<int> iter = startNode;
+            var iter = startNode;
 
             while (iter != null)
             {
