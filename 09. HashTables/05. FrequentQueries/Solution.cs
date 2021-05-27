@@ -6,11 +6,11 @@ namespace Elements_of_Programming_Interviews._09._HashTables._05._FrequentQuerie
 {
     public class Solution
     {
-        public static List<string> ComputeFrequentStrings(List<string> A, int k)
+        public static List<string> ComputeFrequentStrings(List<string> array, int k)
         {
             var dict = new Dictionary<string, int>();
 
-            foreach (var a in A)
+            foreach (var a in array)
             {
                 if (!dict.ContainsKey(a))
                 {
@@ -27,19 +27,19 @@ namespace Elements_of_Programming_Interviews._09._HashTables._05._FrequentQuerie
             return FindKth(distinct, k, dict);
         }
 
-        private static List<string> FindKth(List<string> A, int k, Dictionary<string, int> dict)
+        private static List<string> FindKth(IList<string> array, int k, IReadOnlyDictionary<string, int> dict)
         {
-            int left = 0, right = A.Count - 1;
+            int left = 0, right = array.Count - 1;
             var r = new Random(0);
 
             while (left <= right)
             {
                 // Generates a random integer in [left, right].
                 var pivotIdx = r.Next(right - left + 1) + left;
-                var newPivotIdx = PartitionAroundPivot(left, right, pivotIdx, A, dict);
+                var newPivotIdx = PartitionAroundPivot(left, right, pivotIdx, array, dict);
                 if (newPivotIdx == k - 1)
                 {
-                    return A.Take(k).ToList();
+                    return array.Take(k).ToList();
                 }
                 else if (newPivotIdx > k - 1)
                 {
@@ -63,24 +63,24 @@ namespace Elements_of_Programming_Interviews._09._HashTables._05._FrequentQuerie
         // Note: "less than" is defined by the Comparator object.
         //
         // Returns the new index of the pivot element after partition.
-        private static int PartitionAroundPivot(int left, int right, int pivotIdx, List<string> A, Dictionary<string, int> dict)
+        private static int PartitionAroundPivot(int left, int right, int pivotIdx, IList<string> array, IReadOnlyDictionary<string, int> dict)
         {
-            var pivotValue = A[pivotIdx];
+            var pivotValue = array[pivotIdx];
             var newPivotIdx = left;
 
-            Swap(A, pivotIdx, right);
+            Swap(array, pivotIdx, right);
 
             for (var i = left; i < right; ++i)
             {
-                var cmp = (dict[A[i]] > dict[pivotValue]) ? -1 : (dict[A[i]].Equals(dict[pivotValue])) ? 0 : 1;
+                var cmp = (dict[array[i]] > dict[pivotValue]) ? -1 : (dict[array[i]].Equals(dict[pivotValue])) ? 0 : 1;
                 
                 if (cmp < 0)
                 {
-                    Swap(A, i, newPivotIdx++);
+                    Swap(array, i, newPivotIdx++);
                 }
             }
 
-            Swap(A, right, newPivotIdx);
+            Swap(array, right, newPivotIdx);
             return newPivotIdx;
         }
 

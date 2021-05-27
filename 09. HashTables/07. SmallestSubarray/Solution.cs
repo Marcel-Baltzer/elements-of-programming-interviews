@@ -16,8 +16,7 @@ namespace Elements_of_Programming_Interviews._09._HashTables._07._SmallestSubarr
                 this.End = end;
             }
         }
-        
-        
+
         // Solution One
         public static Subarray FindSmallestSubarrayCoveringSet(List<string> paragraph, HashSet<string> keywords)
         {
@@ -34,8 +33,6 @@ namespace Elements_of_Programming_Interviews._09._HashTables._07._SmallestSubarr
             var left = 0;
             for (var right = 0; right < paragraph.Count; ++right)
             {
-               
-                
                 if (keywordsToCover.ContainsKey(paragraph[right]))
                 {
                     var keywordCount = keywordsToCover[paragraph[right]];
@@ -92,7 +89,7 @@ namespace Elements_of_Programming_Interviews._09._HashTables._07._SmallestSubarr
             var loc = new List<string>();
             while (iter.MoveNext())
             {
-                var s = iter.Current;
+                var s = iter.Current ?? string.Empty;
 
                 if (dict.ContainsKey(s))
                 {

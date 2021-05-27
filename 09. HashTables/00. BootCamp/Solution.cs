@@ -56,17 +56,17 @@ namespace Elements_of_Programming_Interviews._09._HashTables._00._BootCamp
 
             public override bool Equals(object obj)
             {
-                if(obj == null || !(obj is ContactList))
+                if(obj is not ContactList list)
                 {
                     return false;
                 }
 
-                if (this == obj)
+                if (this == list)
                 {
                     return true;
                 }
 
-                return names.ToHashSet().SetEquals(((ContactList) obj).names.ToHashSet());
+                return names.ToHashSet().SetEquals(list.names.ToHashSet());
             }
 
             public override int GetHashCode()

@@ -9,8 +9,8 @@ namespace Elements_of_Programming_Interviews._09._HashTables._08._SmallestSubarr
         [Fact]
         public void FindSmallestSequentiallyCoveringSubset()
         {
-            var paragraph = new List<string>() {"apple", "banana", "cat", "apple"};
-            var keywords = new List<string>() {"banana", "apple"};
+            var paragraph = new List<string> {"apple", "banana", "cat", "apple"};
+            var keywords = new List<string> {"banana", "apple"};
 
             var result = Solution.FindSmallestSequentiallyCoveringSubset(paragraph, keywords);
 

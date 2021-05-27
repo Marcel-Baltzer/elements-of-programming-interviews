@@ -9,7 +9,7 @@ namespace Elements_of_Programming_Interviews._09._HashTables._12._Decompositions
         [Fact]
         public void FindAllSubstrings()
         {
-            var sentence = "amanaplanacanalcanaplana";
+            const string sentence = "amanaplanacanalcanaplana";
             var words = new List<string>() {"can", "apl", "ana"};
 
             var result = Solution.FindAllSubstrings(sentence, words);

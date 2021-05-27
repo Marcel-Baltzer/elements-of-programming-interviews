@@ -26,7 +26,7 @@ namespace Elements_of_Programming_Interviews._09._HashTables._12._Decompositions
             return result;
         }
 
-        private static bool MatchAllWordsInDict(string s, Dictionary<string, int> wordToFreq, 
+        private static bool MatchAllWordsInDict(string s, IReadOnlyDictionary<string, int> wordToFreq, 
                                                 int start, int numWords, int unitSize)
         {
             var currStringToFreq = new Dictionary<string, int>();
@@ -51,7 +51,7 @@ namespace Elements_of_Programming_Interviews._09._HashTables._12._Decompositions
             return true;
         }
 
-        private static void Increment(string word, Dictionary<string, int> dict)
+        private static void Increment(string word, IDictionary<string, int> dict)
         {
             var count = 0;
             if (dict.ContainsKey(word))

@@ -6,10 +6,10 @@ namespace Elements_of_Programming_Interviews._09._HashTables._10._LongestContain
 {
     public class Solution
     {
-        public static int LongestContainedRange(List<int> A)
+        public static int LongestContainedRange(List<int> array)
         {
             // unprocessedEntries records the existence of each entry in A.
-            var unprocessedEntries = new HashSet<int>(A);
+            var unprocessedEntries = new HashSet<int>(array);
 
             var maxIntervalSize = 0;
 
