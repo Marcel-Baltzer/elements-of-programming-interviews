@@ -46,12 +46,12 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._07._ComputeBi
 
             var expectedResult = new List<List<int>>()
             {
-                new List<int>() {314},
-                new List<int>() {6,6},
-                new List<int>() {271,561,2,271},
-                new List<int>() {28,0,3,1,28},
-                new List<int>() {17,401,257},
-                new List<int>() {641},
+                new() {314},
+                new() {6,6},
+                new() {271,561,2,271},
+                new() {28,0,3,1,28},
+                new() {17,401,257},
+                new() {641}
             };
 
             result.Should().BeEquivalentTo(expectedResult);

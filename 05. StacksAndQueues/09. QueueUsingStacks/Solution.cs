@@ -7,8 +7,8 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._09._QueueUsin
     {
         public class QueueWithStacks
         {
-            private Stack<int> enqueue = new Stack<int>();
-            private Stack<int> dequeue = new Stack<int>();
+            private readonly Stack<int> enqueue = new();
+            private readonly Stack<int> dequeue = new();
 
             public void Enqueue(int x)
             {

@@ -12,18 +12,18 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._07._ComputeBi
 
         public static List<List<int>> BinaryTreeDepthOrder(BinaryTreeNode<int> tree)
         {
-            Queue<BinaryTreeNode<int>> currDepthNodes = new Queue<BinaryTreeNode<int>>();
+            var currDepthNodes = new Queue<BinaryTreeNode<int>>();
             currDepthNodes.Enqueue(tree);
-            List<List<int>> result = new List<List<int>>();
+            var result = new List<List<int>>();
 
             while (currDepthNodes.Count > 0)
             {
-                Queue<BinaryTreeNode<int>> nextDepthNodes = new Queue<BinaryTreeNode<int>>();
-                List<int> thisLevel = new List<int>();
+                var nextDepthNodes = new Queue<BinaryTreeNode<int>>();
+                var thisLevel = new List<int>();
 
                 while (currDepthNodes.Count > 0)
                 {
-                    BinaryTreeNode<int> curr = currDepthNodes.Dequeue();
+                    var curr = currDepthNodes.Dequeue();
 
                     if (curr != null)
                     {

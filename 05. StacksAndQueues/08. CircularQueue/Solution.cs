@@ -10,7 +10,7 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._08._CircularQ
             private int head = 0;
             private int tail = 0;
             private int numQueueElements = 0;
-            private int ScaleFactor = 2;
+            private const int ScaleFactor = 2;
             private int[] entries;
 
             public Queue(int capacity)
@@ -40,7 +40,7 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._08._CircularQ
                 if (numQueueElements != 0)
                 {
                     numQueueElements--;
-                    int ret = entries[head];
+                    var ret = entries[head];
                     head = (head + 1) % entries.Length;
 
                     return ret;

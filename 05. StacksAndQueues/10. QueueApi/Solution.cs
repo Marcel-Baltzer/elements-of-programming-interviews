@@ -7,8 +7,8 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._10._QueueApi
     {
         public class QueueWithMax<T> where T : IComparable<T>
         {
-            private Queue<T> entries = new Queue<T>();
-            private LinkedList<T> candidatesForMax = new LinkedList<T>();
+            private readonly Queue<T> entries = new();
+            private readonly LinkedList<T> candidatesForMax = new();
 
             public void Enqueue(T x)
             {
@@ -17,7 +17,7 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._10._QueueApi
                 while (candidatesForMax.Count > 0)
                 {
                     // Eliminate dominated elements in candidatesForMax.
-                    if (candidatesForMax.Last.Value.CompareTo(x) >= 0)
+                    if (candidatesForMax.Last != null && candidatesForMax.Last.Value.CompareTo(x) >= 0)
                     {
                         break;
                     }
@@ -31,9 +31,9 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._10._QueueApi
             {
                 if (entries.Count > 0)
                 {
-                    T result = entries.Dequeue();
+                    var result = entries.Dequeue();
 
-                    if (result.Equals(candidatesForMax.First.Value))
+                    if (candidatesForMax.First != null && result.Equals(candidatesForMax.First.Value))
                     {
                         candidatesForMax.RemoveFirst();
                     }
@@ -46,7 +46,7 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._10._QueueApi
 
             public T Max()
             {
-                if (candidatesForMax.Count > 0)
+                if (candidatesForMax.Count > 0 && candidatesForMax.First != null)
                 {
                     return candidatesForMax.First.Value;
                 }
@@ -56,8 +56,8 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._10._QueueApi
 
         public class QueueWithStacksAndMax
         {
-            private _01._StackApi.Solution.StackWithCachedMaxCount enqueue = new _01._StackApi.Solution.StackWithCachedMaxCount();
-            private _01._StackApi.Solution.StackWithCachedMaxCount dequeue = new _01._StackApi.Solution.StackWithCachedMaxCount();
+            private readonly _01._StackApi.Solution.StackWithCachedMaxCount enqueue = new();
+            private readonly _01._StackApi.Solution.StackWithCachedMaxCount dequeue = new();
 
             public void Enqueue(int x)
             {

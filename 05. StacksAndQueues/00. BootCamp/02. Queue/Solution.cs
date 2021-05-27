@@ -8,7 +8,7 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._00._BootCamp.
     {
         public class QueueWithMaxIntro
         {
-            private Queue<int> data = new Queue<int>();
+            private readonly Queue<int> data = new();
 
             public void Enqueue(int x)
             {

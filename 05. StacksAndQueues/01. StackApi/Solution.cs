@@ -13,14 +13,14 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._01._StackApi
                 this.Max = max;
 
             }
-            public int Element { get; set; }
-            public int Max { get; set; }
+            public int Element { get; }
+            public int Max { get; }
         }
 
         public class StackWithCachedMax
         {
             // Stores (element , cached maximum) pair.
-            private Stack<ElementWithCachedMax> elementWithCachedMax = new Stack<ElementWithCachedMax>();
+            private readonly Stack<ElementWithCachedMax> elementWithCachedMax = new();
 
             public bool IsEmpty()
             {
@@ -63,15 +63,15 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._01._StackApi
                 this.Count = count;
             }
 
-            public int Max { get; set; }
+            public int Max { get; }
 
             public int Count { get; set; }
         }
 
         public class StackWithCachedMaxCount
         {
-            private Stack<int> element = new Stack<int>();
-            private Stack<MaxWithCount> cachedMaxWithCount = new Stack<MaxWithCount>();
+            private readonly Stack<int> element = new();
+            private readonly Stack<MaxWithCount> cachedMaxWithCount = new();
 
             public bool IsEmpty()
             {
@@ -95,11 +95,11 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._01._StackApi
                     throw new InvalidOperationException("pop(): empty stack");
                 }
 
-                int popElement = element.Pop();
+                var popElement = element.Pop();
 
                 if (popElement.Equals(cachedMaxWithCount.Peek().Max))
                 {
-                    cachedMaxWithCount.Peek().Count = cachedMaxWithCount.Peek().Count - 1;
+                    cachedMaxWithCount.Peek().Count -= 1;
 
                     if (cachedMaxWithCount.Peek().Count.Equals(0))
                     {
@@ -118,7 +118,7 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._01._StackApi
                 {
                     if (x.CompareTo(cachedMaxWithCount.Peek().Max) == 0)
                     {
-                        cachedMaxWithCount.Peek().Count = cachedMaxWithCount.Peek().Count + 1;
+                        cachedMaxWithCount.Peek().Count += 1;
                     }
                     else if (x.CompareTo(cachedMaxWithCount.Peek().Max) > 0)
                     {

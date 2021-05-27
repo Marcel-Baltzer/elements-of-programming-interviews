@@ -19,8 +19,6 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._00._BootCamp.
             {
                 System.Console.WriteLine(nodes.Pop());
             }
-        }
-
-        
+        }        
     }
 }

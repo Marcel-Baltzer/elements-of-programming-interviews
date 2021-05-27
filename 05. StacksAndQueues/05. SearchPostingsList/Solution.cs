@@ -11,9 +11,9 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._05._SearchPos
             public PostingListNode Jump;
         }
 
-        public static void SetJumpOrderRecursive(PostingListNode L)
+        public static void SetJumpOrderRecursive(PostingListNode list)
         {
-            SetJumpOrderHelper(L, 0);
+            SetJumpOrderHelper(list, 0);
         }
 
         private static int SetJumpOrderHelper(PostingListNode listNode, int order)
@@ -31,12 +31,12 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._05._SearchPos
         public static void SetJumpOrderWithStack(PostingListNode listNode)
         {
             var stack = new Stack<PostingListNode>();
-            int order = 0;
+            var order = 0;
             stack.Push(listNode);
 
             while (stack.Count > 0)
             {
-                PostingListNode curr = stack.Pop();
+                var curr = stack.Pop();
                 if (curr != null && curr.Order == -1)
                 {
                     curr.Order = order++;

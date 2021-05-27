@@ -46,21 +46,21 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._04._Normalize
                 }
             }
 
-            StringBuilder result = new StringBuilder();
+            var result = new StringBuilder();
 
             if (pathNames.Count > 0)
             {
-                var enu = pathNames.OrderByDescending(x => x).GetEnumerator();
+                using var enu = pathNames.OrderByDescending(x => x).GetEnumerator();
 
                 enu.MoveNext();
-                string prev = enu.Current;
+                var prev = enu.Current;
                 result.Append(prev);
 
                 while (enu.MoveNext())
                 {
-                    if (!prev.Equals("/"))
+                    if (prev != null && !prev.Equals("/"))
                     {
-                        result.Append("/");
+                        result.Append('/');
                     }
 
                     prev = enu.Current;

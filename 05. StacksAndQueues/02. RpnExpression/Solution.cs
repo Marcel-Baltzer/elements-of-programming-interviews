@@ -7,30 +7,30 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._02._RpnExpres
     {
         public static int Eval(string rpnExpression)
         {
-            var IntermediateResults = new Stack<int>();
-            string delimiter = ",";
-            string[] symbols = rpnExpression.Split(delimiter);
+            var intermediateResults = new Stack<int>();
+            const string delimiter = ",";
+            var symbols = rpnExpression.Split(delimiter);
 
             foreach (var token in symbols)
             {
                 if (token.Length == 1 && "+-*/".Contains(token))
                 {
-                    int y = IntermediateResults.Pop();
-                    int x = IntermediateResults.Pop();
+                    var y = intermediateResults.Pop();
+                    var x = intermediateResults.Pop();
 
                     switch (token[0])
                     {
                         case '+':
-                            IntermediateResults.Push(x + y);
+                            intermediateResults.Push(x + y);
                             break;
                         case '-':
-                            IntermediateResults.Push(x - y);
+                            intermediateResults.Push(x - y);
                             break;
                         case '*':
-                            IntermediateResults.Push(x * y);
+                            intermediateResults.Push(x * y);
                             break;
                         case '/':
-                            IntermediateResults.Push(x / y);
+                            intermediateResults.Push(x / y);
                             break;
                         default:
                             throw new InvalidOperationException($"Malformed RPN at : {token}");
@@ -38,11 +38,11 @@ namespace Elements_of_Programming_Interviews._05._StacksAndQueues._02._RpnExpres
                 }
                 else
                 {
-                    IntermediateResults.Push(Int16.Parse(token));
+                    intermediateResults.Push(short.Parse(token));
                 }
             }
 
-            return IntermediateResults.Pop();
+            return intermediateResults.Pop();
         }
     }
 }
