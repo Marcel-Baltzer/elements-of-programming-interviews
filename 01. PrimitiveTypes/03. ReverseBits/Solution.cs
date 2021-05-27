@@ -4,8 +4,8 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._03._ReverseBit
     {
         public static long BrutForce(long number, int lastIndex)
         {   
-            int i = 0;
-            int j = lastIndex;
+            var i = 0;
+            var j = lastIndex;
 
             while (i < j) 
             {
@@ -19,8 +19,8 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._03._ReverseBit
 
         public static long ReverseBits(long number)
         {             
-            var wordSize = 16;
-            var bitMask = 0xFFFF;            
+            const int wordSize = 16;
+            const int bitMask = 0xFFFF;            
 
             var precomputedReverse = new long[1 << wordSize];
 

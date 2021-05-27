@@ -46,9 +46,9 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._01._Parity
         [InlineData(5,0)]
         [InlineData(6,0)]
         [InlineData(7,1)]
-        public void ParityWithChache(long number, short expectedResult)
+        public void ParityWithCache(long number, short expectedResult)
         {
-            var result = Solution.ParityWithChache(number);
+            var result = Solution.ParityWithCache(number);
 
             result.Should().Be(expectedResult);
         }

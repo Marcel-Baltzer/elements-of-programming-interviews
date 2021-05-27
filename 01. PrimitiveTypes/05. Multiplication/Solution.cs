@@ -22,26 +22,26 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._05._Multiplica
         private static long Add(long a, long b)
         {
             long sum = 0;
-            long carryin = 0;
+            long carryIn = 0;
             long k = 1;
-            long temp_a = a;
-            long temp_b = b;
+            var tempA = a;
+            var tempB = b;
 
-            while (temp_a != 0 || temp_b != 0)
+            while (tempA != 0 || tempB != 0)
             {
-                long ak = a & k;
-                long bk = b & k;
+                var ak = a & k;
+                var bk = b & k;
 
-                long carryout = (ak & bk) | (ak & carryin) | (bk & carryin);
+                var carryout = (ak & bk) | (ak & carryIn) | (bk & carryIn);
 
-                sum |= (ak ^ bk ^ carryin);
-                carryin = carryout << 1;
+                sum |= (ak ^ bk ^ carryIn);
+                carryIn = carryout << 1;
                 k <<= 1;
-                temp_a >>= 1;
-                temp_b >>= 1;
+                tempA >>= 1;
+                tempB >>= 1;
             }
 
-            return sum | carryin;
+            return sum | carryIn;
         }   
     }
 }

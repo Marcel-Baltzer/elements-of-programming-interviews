@@ -11,10 +11,10 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._09._Palindrome
                 return false;
             }
 
-            int digitsCount = (int) (Math.Floor(Math.Log10(number))) + 1;
-            int mostSignificantDigitMask = (int)Math.Pow(10 , digitsCount - 1);
+            var digitsCount = (int) (Math.Floor(Math.Log10(number))) + 1;
+            var mostSignificantDigitMask = (int)Math.Pow(10 , digitsCount - 1);
 
-            for(int i = 0; i < (digitsCount / 2); i++)
+            for(var i = 0; i < (digitsCount / 2); i++)
             {
                 if( number / mostSignificantDigitMask != number % 10)
                 {

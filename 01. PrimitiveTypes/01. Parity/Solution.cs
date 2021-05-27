@@ -29,15 +29,15 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._01._Parity
             return result;
         }
 
-        public static short ParityWithChache(long number)
+        public static short ParityWithCache(long number)
         {
              
-            var wordSize = 16;
-            var bitMask = 0xFFFF;
+            const int wordSize = 16;
+            const int bitMask = 0xFFFF;
 
             var precomputedParity = new short[1 << wordSize];
 
-            for (int i = 0; i < (1 << wordSize); ++i) 
+            for (var i = 0; i < (1 << wordSize); ++i) 
             {
                 precomputedParity[i] = Parity(i);
             } 

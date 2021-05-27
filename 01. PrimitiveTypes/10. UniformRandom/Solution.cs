@@ -11,10 +11,10 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._10._UniformRan
 
             do
             {
-                for (int i = 0; (1 << i) < numberOfOutcomes; i++)
+                for (var i = 0; (1 << i) < numberOfOutcomes; i++)
                 {
-                    Random random = new Random();
-                    int randomNumber = random.Next(0, 2);
+                    var random = new Random();
+                    var randomNumber = random.Next(0, 2);
                     
                     result = (result << 1) | randomNumber;
                 }

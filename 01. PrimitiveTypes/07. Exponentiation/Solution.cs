@@ -4,7 +4,7 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._07._Exponentia
     {
         public static double Power(double  basis, int exponent)
         {
-            double result = 1.0;
+            var result = 1.0;
             long power = exponent;
 
             if(exponent < 0)

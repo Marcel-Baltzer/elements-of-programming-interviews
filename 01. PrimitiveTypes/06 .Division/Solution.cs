@@ -5,9 +5,9 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._06_.Division
         public static long Divide(long x, long y)
         {
             long result = 0;
-            int power = 32;
+            var power = 32;
 
-            long yPower = y << power;
+            var yPower = y << power;
 
             while (x >= y)
             {

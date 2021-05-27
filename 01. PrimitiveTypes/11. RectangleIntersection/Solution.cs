@@ -6,42 +6,42 @@ namespace Elements_of_Programming_Interviews._01._PrimitiveTypes._11._RectangleI
     {
         public  class Rectangle
         {
-            public int x { get; private set; }
-            public int y { get; private set; }
-            public int width { get; private set; }
-            public int height { get; private set; }
+            public int X { get; }
+            public int Y { get; }
+            public int Width { get; }
+            public int Height { get; }
 
             public Rectangle(int x, int y, int width, int height)
             {
-                this.x  = x;
-                this.y = y;
-                this.width = width;
-                this.height = height;
+                X  = x;
+                Y = y;
+                Width = width;
+                Height = height;
             }
         }
 
-        public static Rectangle IntersectRectangle(Rectangle R1, Rectangle R2)
+        public static Rectangle IntersectRectangle(Rectangle r1, Rectangle r2)
         {
-            if (!IsIntersect(R1 , R2))
+            if (!IsIntersect(r1 , r2))
             {
                 return new Rectangle(0, 0, -1, -1); // No intersection
             }
 
             return new Rectangle(
-                Math.Max(R1.x , R2.x),
-                Math.Max(R1.y , R2.y),
-                Math.Min(R1.x + R1.width, R2.x + R2.width) - Math.Max(R1.x , R2.x),
-                Math.Min(R1.y + R1.height, R2.y + R2.height) - Math.Max(R1.y , R2.y)
+                Math.Max(r1.X , r2.X),
+                Math.Max(r1.Y , r2.Y),
+                Math.Min(r1.X + r1.Width, r2.X + r2.Width) - Math.Max(r1.X , r2.X),
+                Math.Min(r1.Y + r1.Height, r2.Y + r2.Height) - Math.Max(r1.Y , r2.Y)
             );
         }
 
 
-        public static bool IsIntersect(Rectangle R1, Rectangle R2)
+        private static bool IsIntersect(Rectangle r1, Rectangle r2)
         {
-            return R1.x <= R2.x + R2.width &&
-                   R1.x + R1.width >= R2.x &&
-                   R1.y <= R2.y + R2.height &&
-                   R1.y + R1.height >= R2.y;
+            return r1.X <= r2.X + r2.Width &&
+                   r1.X + r1.Width >= r2.X &&
+                   r1.Y <= r2.Y + r2.Height &&
+                   r1.Y + r1.Height >= r2.Y;
         }
         
     }
