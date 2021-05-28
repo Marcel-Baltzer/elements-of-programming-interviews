@@ -1,4 +1,4 @@
-namespace Elements_of_Programming_Interviews._06._BinaryTrees
+namespace Elements_of_Programming_Interviews.Types
 {
     public class BinaryTreeNodeWithParent<T>
     {

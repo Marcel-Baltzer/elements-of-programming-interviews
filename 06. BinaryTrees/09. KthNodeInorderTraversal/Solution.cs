@@ -1,3 +1,5 @@
+using Elements_of_Programming_Interviews.Types;
+
 namespace Elements_of_Programming_Interviews._06._BinaryTrees._09._KthNodeInorderTraversal
 {
     public class Solution
