@@ -1,3 +1,5 @@
+using Elements_of_Programming_Interviews.Types;
+
 namespace Elements_of_Programming_Interviews._04._LinkedLists._09._CyclicRightShift
 {
     public class Solution

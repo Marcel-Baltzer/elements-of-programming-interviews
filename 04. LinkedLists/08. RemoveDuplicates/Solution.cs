@@ -1,3 +1,5 @@
+using Elements_of_Programming_Interviews.Types;
+
 namespace Elements_of_Programming_Interviews._04._LinkedLists._08._RemoveDuplicates
 {
     public class Solution

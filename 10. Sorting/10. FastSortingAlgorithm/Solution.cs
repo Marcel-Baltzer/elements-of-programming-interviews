@@ -1,4 +1,5 @@
 ﻿using Elements_of_Programming_Interviews._04._LinkedLists;
+using Elements_of_Programming_Interviews.Types;
 
 namespace Elements_of_Programming_Interviews._10._Sorting._10._FastSortingAlgorithm
 {
