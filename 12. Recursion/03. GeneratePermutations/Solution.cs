@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Elements_of_Programming_Interviews._12._Recursion._03._GeneratePermutations
 {
     public static class Solution
     {
+        // Solution One
+        
         public static IEnumerable<List<int>> Permutations(List<int> array)
         {
             var result = new List<List<int>>();
@@ -34,6 +37,23 @@ namespace Elements_of_Programming_Interviews._12._Recursion._03._GeneratePermuta
             var temp = list[i];
             list[i] = list[j];
             list[j] = temp;
+        }
+        
+        // Solution Two
+
+        public static IEnumerable<List<int>> PermutationsWithComputeNextPermutationSolution(List<int> array)
+        {
+            var result = new List<List<int>>();
+
+            array.Sort();
+            do
+            {
+                result.Add(new List<int>(array));
+                array = Elements_of_Programming_Interviews._02._Arrays._11._ComputeNextPermutation
+                    .Solution.NextPermutation(array);
+            } while (array.Any());
+            
+            return result;
         }
     }
 }
